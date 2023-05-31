@@ -1,0 +1,202 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cell-Wall
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -1137331440, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 527570659, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -206746040, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1069517786, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1303334963, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 590606350, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -409018375, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1292543469, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 595364458, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -485153960, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -575524944, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1241865947, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 624573023, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -352118094, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1303483968, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1939993155, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -731700026, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -433002978, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 995543037, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 515904871, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1004200827, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1065819504, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 2074985916, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 53756937, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1481815562, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 36066587, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1612714994, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1707526509, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 460797142, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -661753446, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -727495530, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1655316009, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 670951741, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 929347441, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1668242818, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 719897708, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1356436259, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -930269598, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1915409268, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 479278328, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1326523320, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1325026153, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 777918143, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 801134788, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1742031113, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 432984963, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1646581254, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 854668150, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 109024606, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 869108351, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1720667181, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 815351881, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 389852462, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 265181161, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 294194402, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 491924614, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 727097406, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1141176566, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 398417613, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1472112278, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1062351007, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -914947139, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1032917602, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1180222101, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 27536864, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -372158180, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 853976, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 803744775, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -753875387, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1391630836, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1093588901, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1790464783, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 762065352, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1485394799, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -651278000, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: 1091549035, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1439226104, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1436661586, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  - {fileID: -1510373857, guid: 730fa3404c95e3d45af1f21f7dc006b1, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Cell-Wall-Sheet_23
+  - Cell-Wall-Sheet_22
+  - Cell-Wall-Sheet_18
+  - Cell-Wall-Sheet_21
+  - Cell-Wall-Sheet_19
+  - Cell-Wall-Sheet_20
+  - Cell-Wall-Sheet_16
+  - Cell-Wall-Sheet_27
+  - Cell-Wall-Sheet_17
+  - Cell-Wall-Sheet_26
+  - Cell-Wall-Sheet_14
+  - Cell-Wall-Sheet_25
+  - Cell-Wall-Sheet_15
+  - Cell-Wall-Sheet_24
+  - Cell-Wall-Sheet_12
+  - Cell-Wall-Sheet_13
+  - Cell-Wall-Sheet_10
+  - Cell-Wall-Sheet_11
+  - Cell-Wall-Sheet_9
+  - Cell-Wall-Sheet_8
+  - Cell-Wall-Sheet_3
+  - Cell-Wall-Sheet_2
+  - Cell-Wall-Sheet_1
+  - Cell-Wall-Sheet_0
+  - Cell-Wall-Sheet_7
+  - Cell-Wall-Sheet_6
+  - Cell-Wall-Sheet_5
+  - Cell-Wall-Sheet_4
+  - Cell-Wall-Sheet_74
+  - Cell-Wall-Sheet_75
+  - Cell-Wall-Sheet_76
+  - Cell-Wall-Sheet_77
+  - Cell-Wall-Sheet_67
+  - Cell-Wall-Sheet_38
+  - Cell-Wall-Sheet_70
+  - Cell-Wall-Sheet_66
+  - Cell-Wall-Sheet_39
+  - Cell-Wall-Sheet_71
+  - Cell-Wall-Sheet_65
+  - Cell-Wall-Sheet_72
+  - Cell-Wall-Sheet_64
+  - Cell-Wall-Sheet_73
+  - Cell-Wall-Sheet_63
+  - Cell-Wall-Sheet_62
+  - Cell-Wall-Sheet_58
+  - Cell-Wall-Sheet_61
+  - Cell-Wall-Sheet_59
+  - Cell-Wall-Sheet_60
+  - Cell-Wall-Sheet_30
+  - Cell-Wall-Sheet_78
+  - Cell-Wall-Sheet_31
+  - Cell-Wall-Sheet_49
+  - Cell-Wall-Sheet_32
+  - Cell-Wall-Sheet_52
+  - Cell-Wall-Sheet_48
+  - Cell-Wall-Sheet_33
+  - Cell-Wall-Sheet_53
+  - Cell-Wall-Sheet_34
+  - Cell-Wall-Sheet_50
+  - Cell-Wall-Sheet_35
+  - Cell-Wall-Sheet_69
+  - Cell-Wall-Sheet_51
+  - Cell-Wall-Sheet_45
+  - Cell-Wall-Sheet_36
+  - Cell-Wall-Sheet_68
+  - Cell-Wall-Sheet_56
+  - Cell-Wall-Sheet_44
+  - Cell-Wall-Sheet_37
+  - Cell-Wall-Sheet_57
+  - Cell-Wall-Sheet_47
+  - Cell-Wall-Sheet_54
+  - Cell-Wall-Sheet_46
+  - Cell-Wall-Sheet_55
+  - Cell-Wall-Sheet_41
+  - Cell-Wall-Sheet_40
+  - Cell-Wall-Sheet_43
+  - Cell-Wall-Sheet_42
+  - Cell-Wall-Sheet_29
+  - Cell-Wall-Sheet_28
+  m_RenderDataMap: {}
+  m_Tag: Cell-Wall
+  m_IsVariant: 0

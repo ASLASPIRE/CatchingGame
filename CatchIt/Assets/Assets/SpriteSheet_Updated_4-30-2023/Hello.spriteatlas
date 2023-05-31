@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hello
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -148030271, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 1867576275, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 192821175, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 592590044, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 1553260360, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 1443366969, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: -30617079, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 1276803703, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: -274038983, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: -1393865027, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 2056370281, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 14361982, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: -322712729, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: -1530510043, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 2075091704, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: -1747012200, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: -1893356709, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: -1907051962, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 330517077, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  - {fileID: 847646589, guid: 9ebab80e68ad0e74980016bf76ebb0cb, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Hello-Sheet_8
+  - Hello-Sheet_9
+  - Hello-Sheet_15
+  - Hello-Sheet_14
+  - Hello-Sheet_17
+  - Hello-Sheet_16
+  - Hello-Sheet_11
+  - Hello-Sheet_10
+  - Hello-Sheet_13
+  - Hello-Sheet_12
+  - Hello-Sheet_19
+  - Hello-Sheet_18
+  - Hello-Sheet_6
+  - Hello-Sheet_7
+  - Hello-Sheet_4
+  - Hello-Sheet_5
+  - Hello-Sheet_2
+  - Hello-Sheet_3
+  - Hello-Sheet_0
+  - Hello-Sheet_1
+  m_RenderDataMap: {}
+  m_Tag: Hello
+  m_IsVariant: 0

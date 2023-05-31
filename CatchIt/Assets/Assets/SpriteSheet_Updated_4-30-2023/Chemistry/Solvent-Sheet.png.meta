@@ -1,0 +1,1907 @@
+fileFormatVersion: 2
+guid: ab00620c3b6ee7f43893574677a13669
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Solvent-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3707
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b21c9d7e45cc314b97f24df89b373ac
+      internalID: 1913906905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3707
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 332e5c36b5e49134d93544769cca7d03
+      internalID: -1141037308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3707
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c2b4d6a72f33de45b7e1a7125cf7595
+      internalID: -707134301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3707
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3f8c07194f46c4a84213ca215c6f49
+      internalID: -494672709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3707
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c93af3538109aa4d8cdab16f5772b7c
+      internalID: -1291168451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3707
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4035b421021af834eaa7d78b0cf75837
+      internalID: -1005470878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3707
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca82ca0bd47b64644a99226633ee0063
+      internalID: 706332662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3370
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0edc551fee773bd4986d0b437229111a
+      internalID: 1152981780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3370
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377eb055d2783f84a91980e3dc83b122
+      internalID: 780599877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3370
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3230c3bb16d76447ac1459fd92226ef
+      internalID: -1468721404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3370
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae1a5f5e0efef440845bc5726d33108
+      internalID: 1398725931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3370
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7329df85024ca43916da67adecca42
+      internalID: 1573596193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3370
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17bb2c6870f9e9f4ba35f75cbe2b6a19
+      internalID: 1825307118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3370
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd1102b8fbbf9049a38ab7fd48bdaf4
+      internalID: -1411101888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3033
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345c397d098a259498469d22fbb03882
+      internalID: -1102125915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3033
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da266cab8c98bb94baa5909800df1d8c
+      internalID: -553786514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3033
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7784bc238f899c243b7ecf9ec4767b87
+      internalID: 218353112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3033
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1276c974de8e0a940bc0414d61e444d7
+      internalID: 2051809958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3033
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad08d87f4950bd342afaba729c157229
+      internalID: 987949493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3033
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20e67edbb4ae624ba174dd9540ac325
+      internalID: 1222397951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 3033
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42817f155122404eb0778a4f39f7b02
+      internalID: 371119555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2696
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c3ae8408e94f34da8572a38d54a80f
+      internalID: -629994896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2696
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc6bfc0addab6e478a498c0892e78a8
+      internalID: 611660663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2696
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80fb1c9288baf4849af9b07e2a58959e
+      internalID: -1497173481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2696
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45cc24133b35e4344a9a85a23413bf4c
+      internalID: -48354016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2696
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da91e6dd5750477468dfa56b4f7f3398
+      internalID: -124127754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2696
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ed216fe1cd38f47bf3be5f75c3bab3
+      internalID: 1205296741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2696
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d457ded29c293e44b7e98bc5902b8fc
+      internalID: 146990199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2359
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4d6d157d363de439c7b49cde3f40d5
+      internalID: -1857609920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2359
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c506588cd2cd94482987eed88d367a
+      internalID: 352697973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2359
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7860723fd4bfc9040843becb7e170dc0
+      internalID: -916193567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2359
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50491b9ef63cad84aab7eaad588a6832
+      internalID: 2045288137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2359
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d8aab30c70a9c4b86720ef92f25268
+      internalID: -946422551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2359
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511a8f0fb59895642a2a3eb9b3d49290
+      internalID: -931343525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2359
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c683618e1349f44cbb87998531f0539
+      internalID: 1362089263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2022
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6cfc4235ad1274cbfe9a2d8740c6b5
+      internalID: 1215987336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2022
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b60299e5683771e48ad1b5be1672bea5
+      internalID: 923712952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2022
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a1a34879aef23439ab612c3924f5f3
+      internalID: 1021083868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2022
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9c1dcbb0e2e734985d14e0b5ce9e0c
+      internalID: 2099278805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2022
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0095ee664c44cd149a71eff49c545b0e
+      internalID: 1348123376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2022
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050137593e336134fb999ebb17877964
+      internalID: 1239913273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 2022
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85105aa6ce9e8794282bdecca33d8616
+      internalID: 595288948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1685
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd078c6b57f65942be96aab5c3eeb1b
+      internalID: -1433004695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1685
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae14adef7afc6e4a835f43d53fcb67f
+      internalID: -1163718234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1685
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630c47405b447f74ca34ffd3140dfd46
+      internalID: 1085472646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1685
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f281f9c525bfb994fa0a65d5dbe9f4b7
+      internalID: -1064362985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1685
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db792265478d7324fad45426bd0d7670
+      internalID: -1307968075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1685
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b59ce6fc19f164cbb26b2a97a811a0
+      internalID: 1946016368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1685
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a88a7efcb5dc3840a64d01cfb7310c1
+      internalID: 850284279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1348
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd34b2c37486df439e5a0386c859839
+      internalID: 350961625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1348
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114d73e2a8eb8c04b90815978ffd410f
+      internalID: 1656054472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1348
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56a86b409d9aec44903fa4a226ad461
+      internalID: 1759910496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1348
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbbfbd1bef1d754cb2f657e87df611b
+      internalID: -643587050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1348
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c961013851644f54baf43f654a489273
+      internalID: 537850002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1348
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e64ccf93611cc42af15879be85b493
+      internalID: -513490637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1348
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426284f8be24e7f4b9e6973d27b1ff2d
+      internalID: -915532934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1011
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c6729faa99262f41bb5c098a466c4ba
+      internalID: -1118423166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1011
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2824f53d6c191f47991a51ea67bb5b3
+      internalID: 260444615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1011
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48d504f345c10546b43d332e34ec05b
+      internalID: -1059354651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1011
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a33be1fbc4ee9249b0d8ed36d7d3b2b
+      internalID: -1503285074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1011
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cf85ebd57191b4788ad28d6f8d509e
+      internalID: -533299594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1011
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497ccd6f7db932c4d94e8962d9d4feef
+      internalID: -94302785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 1011
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f920caac45b7a43429968e92ac330200
+      internalID: -719324097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 674
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f51d0e123a7a28429f2016d8fb7d2e9
+      internalID: -394961553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 674
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73956ab4bc8e5ab4a865ff4040400a3d
+      internalID: 729405830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 674
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8982da78f03d4b34f979af998eec1345
+      internalID: -739610452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 674
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beadf889982e37a4bbb48e0524f26407
+      internalID: 2117325011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 674
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e0570b7df6bd2a468976438bd34b508
+      internalID: -2077455856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 674
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b98b8b387a734e644b3e59aef2c0b137
+      internalID: -1814325229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 674
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcaf8b60578c6154391c39f1d08737a1
+      internalID: 685208836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 337
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28baba75d35eac408b1bbff0809b74f
+      internalID: 1426474449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 337
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5b8342f539a48428aee1f7d300c5fb
+      internalID: -1075745921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 337
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f90c5035d0388c4b9dab35241043f0e
+      internalID: -1933342626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 337
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd20da8063017e458d7131ec86dabcf
+      internalID: -1490135701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_74
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 337
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c4dce1535f064448b9dce51d5412fd
+      internalID: -507153331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_75
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 337
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348974046abe8694e90b9aed6e51919d
+      internalID: 1262980433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_76
+      rect:
+        serializedVersion: 2
+        x: 3840
+        y: 337
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0b4590e5ddc274189afdad466b2a11
+      internalID: 997990622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b9e553b9c95af4409fe9af467ab9027
+      internalID: 653520159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_78
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cca9967d8189ec4aa0ba37d4a4b3392
+      internalID: -877802214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Solvent-Sheet_79
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f49ae37542fdc644c9a5301a938c79df
+      internalID: 1954647938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 883df27ce43bd114a8ac70817bee90a9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Solvent-Sheet_11: 1573596193
+      Solvent-Sheet_22: 611660663
+      Solvent-Sheet_47: 1946016368
+      Solvent-Sheet_79: 1954647938
+      Solvent-Sheet_51: 1759910496
+      Solvent-Sheet_33: -931343525
+      Solvent-Sheet_7: 1152981780
+      Solvent-Sheet_38: 2099278805
+      Solvent-Sheet_42: -1433004695
+      Solvent-Sheet_9: -1468721404
+      Solvent-Sheet_49: 350961625
+      Solvent-Sheet_52: -643587050
+      Solvent-Sheet_67: -2077455856
+      Solvent-Sheet_53: 537850002
+      Solvent-Sheet_45: -1064362985
+      Solvent-Sheet_56: -1118423166
+      Solvent-Sheet_27: 146990199
+      Solvent-Sheet_13: -1411101888
+      Solvent-Sheet_20: 371119555
+      Solvent-Sheet_57: 260444615
+      Solvent-Sheet_43: -1163718234
+      Solvent-Sheet_10: 1398725931
+      Solvent-Sheet_40: 1239913273
+      Solvent-Sheet_32: -946422551
+      Solvent-Sheet_59: -1503285074
+      Solvent-Sheet_74: -507153331
+      Solvent-Sheet_70: 1426474449
+      Solvent-Sheet_18: 987949493
+      Solvent-Sheet_3: -494672709
+      Solvent-Sheet_23: -1497173481
+      Solvent-Sheet_48: 850284279
+      Solvent-Sheet_41: 595288948
+      Solvent-Sheet_60: -533299594
+      Solvent-Sheet_24: -48354016
+      Solvent-Sheet_77: 653520159
+      Solvent-Sheet_16: 218353112
+      Solvent-Sheet_28: -1857609920
+      Solvent-Sheet_65: -739610452
+      Solvent-Sheet_8: 780599877
+      Solvent-Sheet_44: 1085472646
+      Solvent-Sheet_15: -553786514
+      Solvent-Sheet_25: -124127754
+      Solvent-Sheet_78: -877802214
+      Solvent-Sheet_36: 923712952
+      Solvent-Sheet_37: 1021083868
+      Solvent-Sheet_6: 706332662
+      Solvent-Sheet_0: 1913906905
+      Solvent-Sheet_26: 1205296741
+      Solvent-Sheet_39: 1348123376
+      Solvent-Sheet_68: -1814325229
+      Solvent-Sheet_2: -707134301
+      Solvent-Sheet_34: 1362089263
+      Solvent-Sheet_55: -915532934
+      Solvent-Sheet_61: -94302785
+      Solvent-Sheet_35: 1215987336
+      Solvent-Sheet_66: 2117325011
+      Solvent-Sheet_71: -1075745921
+      Solvent-Sheet_31: 2045288137
+      Solvent-Sheet_69: 685208836
+      Solvent-Sheet_58: -1059354651
+      Solvent-Sheet_73: -1490135701
+      Solvent-Sheet_72: -1933342626
+      Solvent-Sheet_50: 1656054472
+      Solvent-Sheet_12: 1825307118
+      Solvent-Sheet_5: -1005470878
+      Solvent-Sheet_19: 1222397951
+      Solvent-Sheet_14: -1102125915
+      Solvent-Sheet_63: -394961553
+      Solvent-Sheet_29: 352697973
+      Solvent-Sheet_21: -629994896
+      Solvent-Sheet_46: -1307968075
+      Solvent-Sheet_30: -916193567
+      Solvent-Sheet_54: -513490637
+      Solvent-Sheet_62: -719324097
+      Solvent-Sheet_4: -1291168451
+      Solvent-Sheet_75: 1262980433
+      Solvent-Sheet_17: 2051809958
+      Solvent-Sheet_64: 729405830
+      Solvent-Sheet_1: -1141037308
+      Solvent-Sheet_76: 997990622
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

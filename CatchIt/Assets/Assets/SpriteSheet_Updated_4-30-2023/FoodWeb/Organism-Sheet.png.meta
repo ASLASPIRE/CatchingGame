@@ -1,0 +1,1731 @@
+fileFormatVersion: 2
+guid: bb1f23982c35462428bc9dd95d711c9d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Organism-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18058cb588fe1d84497783b43bb4ea88
+      internalID: 632335330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54bc831979c4db4fb7db8dc1e2af82c
+      internalID: 765069681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fc9a818a7a1944eb7036480804c925
+      internalID: -2100800693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d96c0e264a5bc4ba72fa08006b02bb
+      internalID: 1633157864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2dfe7151c1645044800a2ce2307aae6
+      internalID: 1070606929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96f59497e6e83945be9401401ab80be
+      internalID: -902233721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75db154355ddf4c4bbe3c008644c5db9
+      internalID: 1917261503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb5e48259297c744a4792b5c3b7b896
+      internalID: -1953340718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d62212b0c4eeb4daf0e238c7d98f3c
+      internalID: -2020722360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0ce7ae946f9a0438193d626a2a73ad
+      internalID: 284050830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a887f2ca270f1a4e91575c585a39d1c
+      internalID: 930409390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d0f9d8836ff694bbfac9e1f52c91f9
+      internalID: 1132833343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636b4605c01ea5249aee610d930a4f19
+      internalID: -1895645442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2c5dbbb63a30c44b26f4b2c8951e56
+      internalID: -1456456361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e16f47cd8da7714bb695959513e0862
+      internalID: -1004035725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73af074f19cba54794e4f09e68efb27
+      internalID: -1710476316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94439f665bfdfdf42a3a423ae8a329a8
+      internalID: -1586865868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1e5f672076c77c46a78ddb5681f1159
+      internalID: -1326315580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b012056eec9a2245972c3bcfdf66949
+      internalID: 1058081455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea52441dbe9aaf4bb1768552d594acd
+      internalID: -831085030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9db26afde32726a44abb4bb5e7ece1b6
+      internalID: -134019999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89912747867804d409f1f699cd984e05
+      internalID: -1970609188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae4aaa1f7aa11a438e86d1af6d1a7f0
+      internalID: 748564464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411199476502d3e44818383b924bde78
+      internalID: 1332157439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765136db8e5c1f0428bb80838cb03921
+      internalID: 1279107065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3a24a7b370d7b4f9a9460dcc1436a9
+      internalID: -1589458191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e62e6b495dc29d4bbf39231679b3053
+      internalID: -1574447568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a12e6b67ce202479d2ead3a4e12ada
+      internalID: -276277721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd89d56ff9ed0e04e9b723c8db1c3179
+      internalID: -674378521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0f0c12c314a93429041160f0fab0b8
+      internalID: -360967352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84acf09f00942f242b25c5c039236bb6
+      internalID: -233243295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958e82a6bff270b43a5e0c9d5d3ba6ea
+      internalID: -1720879660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7237c5bdfe0f34144812c1db455c1af3
+      internalID: 1486597204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff853caecea0c894e9c2b4c9dc4ad452
+      internalID: -1195570204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0110dc547cc5fe94a9c737574fde4842
+      internalID: 323224073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391dcd7d2a116474d94a632baef759aa
+      internalID: -189426122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd9739321f8afb40abe8420c778410a
+      internalID: -1315476435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238fbfb259afdab48a712132cc8c2728
+      internalID: 999927091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc13028576af3f4408441efcfa2576b3
+      internalID: 675407403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa12fc8988aa58e4fa20501761b33e1f
+      internalID: -1171674410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a35a4de45831745bdeb501215c59bb
+      internalID: -1879112419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a783e45336e54b42a2d5a1d35bab817
+      internalID: 1559661974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cecd585b866e6b4a8491723b79d0770
+      internalID: -517523490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216c99831c5e1a84ebd6036d979d5b36
+      internalID: 2004887588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fcd3c5bdcd5e64faa2607386924ee2
+      internalID: -684589039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96889e8b4dca5dc4d9a840dc5e031fb0
+      internalID: 1245088053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b323c12e0b9e434da2fc41bd4288731
+      internalID: 224627019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732e022d3550ad24e9382eab4056d66a
+      internalID: 325644394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468543fa0e0f5da458c7e0cec4c3e1a3
+      internalID: 898271649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4176011fa015daf42bfec5c8cffc9ee7
+      internalID: 722770632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3716ad9dbfd665e4eb44b0153f76caea
+      internalID: 1735275753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e81710acec926e4eb06fab50fabe0fa
+      internalID: 1573253266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03435123a33225d4caef5a5a7265e457
+      internalID: 1744756145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365cc91b16f6670458a70a04fe592b26
+      internalID: 1298608192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dada05509c11064492168756f91dedf
+      internalID: 1823740117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d65767a4c936ea4eb69e9b092d6ebca
+      internalID: -923710175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5718e694e7783ae41a52dcc43f4a251e
+      internalID: 419845001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e458ab3eb4647a4468ce0b5528421103
+      internalID: -953221615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bb1f27c9a1e0645905eb37f8ce28d8
+      internalID: 1072380853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedd526428fa2ed4ab3a71db5200b3e0
+      internalID: -674717437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 616f7f6f7fe2c75469de34344b7e5f49
+      internalID: -63037485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9752bb81ebb3946b2f3f244dc35265
+      internalID: -2031500070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd1609e02df7764cb9ff33bf4f14939
+      internalID: 809156485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf677c0507638b4cb62d6cb8cf14a16
+      internalID: -340826140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fac11da175816bb4e880f0358c575d45
+      internalID: 1892966890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285843d6554ab6240adade6c24a4968c
+      internalID: 145368197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea72d68bb757224dae5d4ac69bc28d9
+      internalID: 1255456666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37a105081d109c247965d22b5e06410a
+      internalID: 164690144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0843489b464927244b76e6cd51ba374b
+      internalID: -868582731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e84ed9a29f8154d9cb6d829aa9370b
+      internalID: 1679948422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285c88be10757d745af567d4b96de58d
+      internalID: -1868228823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Organism-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd95c311a313c184dbd7be687290b601
+      internalID: -1132105248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9785df7dfbacf5341b8ba9f98d3eaa3a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Organism-Sheet_11: 1132833343
+      Organism-Sheet_60: -63037485
+      Organism-Sheet_16: -1586865868
+      Organism-Sheet_53: 1298608192
+      Organism-Sheet_54: 1823740117
+      Organism-Sheet_71: -1132105248
+      Organism-Sheet_13: -1456456361
+      Organism-Sheet_26: -1574447568
+      Organism-Sheet_47: 325644394
+      Organism-Sheet_33: -1195570204
+      Organism-Sheet_23: 1332157439
+      Organism-Sheet_38: 675407403
+      Organism-Sheet_44: -684589039
+      Organism-Sheet_3: 1633157864
+      Organism-Sheet_18: 1058081455
+      Organism-Sheet_50: 1735275753
+      Organism-Sheet_20: -134019999
+      Organism-Sheet_51: 1573253266
+      Organism-Sheet_62: 809156485
+      Organism-Sheet_4: 1070606929
+      Organism-Sheet_21: -1970609188
+      Organism-Sheet_30: -233243295
+      Organism-Sheet_12: -1895645442
+      Organism-Sheet_6: 1917261503
+      Organism-Sheet_41: 1559661974
+      Organism-Sheet_28: -674378521
+      Organism-Sheet_0: 632335330
+      Organism-Sheet_48: 898271649
+      Organism-Sheet_10: 930409390
+      Organism-Sheet_8: -2020722360
+      Organism-Sheet_27: -276277721
+      Organism-Sheet_2: -2100800693
+      Organism-Sheet_14: -1004035725
+      Organism-Sheet_35: -189426122
+      Organism-Sheet_32: 1486597204
+      Organism-Sheet_45: 1245088053
+      Organism-Sheet_52: 1744756145
+      Organism-Sheet_55: -923710175
+      Organism-Sheet_64: 1892966890
+      Organism-Sheet_65: 145368197
+      Organism-Sheet_70: -1868228823
+      Organism-Sheet_68: -868582731
+      Organism-Sheet_24: 1279107065
+      Organism-Sheet_46: 224627019
+      Organism-Sheet_5: -902233721
+      Organism-Sheet_25: -1589458191
+      Organism-Sheet_22: 748564464
+      Organism-Sheet_42: -517523490
+      Organism-Sheet_37: 999927091
+      Organism-Sheet_40: -1879112419
+      Organism-Sheet_43: 2004887588
+      Organism-Sheet_31: -1720879660
+      Organism-Sheet_67: 164690144
+      Organism-Sheet_56: 419845001
+      Organism-Sheet_49: 722770632
+      Organism-Sheet_66: 1255456666
+      Organism-Sheet_69: 1679948422
+      Organism-Sheet_61: -2031500070
+      Organism-Sheet_9: 284050830
+      Organism-Sheet_57: -953221615
+      Organism-Sheet_39: -1171674410
+      Organism-Sheet_58: 1072380853
+      Organism-Sheet_1: 765069681
+      Organism-Sheet_34: 323224073
+      Organism-Sheet_36: -1315476435
+      Organism-Sheet_63: -340826140
+      Organism-Sheet_19: -831085030
+      Organism-Sheet_29: -360967352
+      Organism-Sheet_59: -674717437
+      Organism-Sheet_7: -1953340718
+      Organism-Sheet_15: -1710476316
+      Organism-Sheet_17: -1326315580
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

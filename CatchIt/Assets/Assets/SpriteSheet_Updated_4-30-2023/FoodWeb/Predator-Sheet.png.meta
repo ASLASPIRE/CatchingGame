@@ -1,0 +1,1401 @@
+fileFormatVersion: 2
+guid: 5c534b9ce290aac46a4d98b399a4a41b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Predator-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221524e7d871e5843b5b22fa1c8955d0
+      internalID: -937769383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32db70f42c18dd4da71e7546e5f9f08
+      internalID: -1620534232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1850bea4917fee642962544965fdfa5c
+      internalID: 2009690312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84a60c6d4e1bfb44681f4eed5dc4d512
+      internalID: 2027131719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b9eb61c13e1ce4cab1c10d66659d4f
+      internalID: -550719304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e73f025758d74994e927070b3f99225d
+      internalID: 845732790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c60db33b5a75242a6cc8d4f13551fb
+      internalID: 1451218194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b216f214c6e3af04bb7bb6200e6eda51
+      internalID: -1263335476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43a7cf03ccfbcb4cb2bffad7f53e448
+      internalID: 103668830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878fe65d7779dc2409b0feaa052e6e8c
+      internalID: -1920081465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534862c2857ff0f428395bd23fe18089
+      internalID: -1692926952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9448513250c21e408ec2d0754d02290
+      internalID: 585922896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15546c319f70aa4e919a24c6eebaef8
+      internalID: -1581312082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6328966fb569aa347b4ccab1aaac1864
+      internalID: 17587252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b978090f8ec14ba419f572179a834071
+      internalID: -1827428293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e03e10a593dde54392bdc6b2123d3b0
+      internalID: 886927764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd1bc889132397b4e90893059720433f
+      internalID: 380058050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a2e3f3033c0dd4387ab31bd07c2fae
+      internalID: 1366995577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1799677adb6aeba4e909f8c9259dac10
+      internalID: -610084908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7f30e2bef07644993c8e34ea8d369f
+      internalID: -926934003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94b01f28e2fc544fbf8a024189cab96
+      internalID: 1036780667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b939641079333c243b7246c9c78c86c5
+      internalID: 1543069987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e269e7bd94b1514bb7e3fbb70d6b9ed
+      internalID: 437107720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb791a563b19c034ab53827028d0467e
+      internalID: -1807194256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e969e649c008bfc4794859943e4e2c0c
+      internalID: 2075516530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a8879fff0ca124ea61d33af0d232d1
+      internalID: 1854548854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1d2e6906ca2c24b92ab157f484728a
+      internalID: -269598200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bebf064e76683c4fafa5d81d162477b
+      internalID: 253140123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45326f694937b674ba925de21bd2796c
+      internalID: -88606258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7fc73a3703ec44295f6c84abc844e0
+      internalID: 2094350476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974e9fcf9b1c55c4d8373f8e9a6765ec
+      internalID: -1193791420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196264ba5ebe9974eb2c147da67b6b40
+      internalID: 78166084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0164457801d38bc40951a2c50e51ae5e
+      internalID: 346087664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a047562b17bc5004196554217162e835
+      internalID: -512254823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415a468a9dee89944b2c524bcba28036
+      internalID: -1774927723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88499d58921ee8a409272b6316f2548c
+      internalID: -1999362600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebdbfc5736f35045af39356c52de1f7
+      internalID: 1645385741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a28e50f498cb94fbe54af0ae3c29ac
+      internalID: 1752960515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf101710f02789b44847690ebd9118ed
+      internalID: -994567460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14c88e00bc3ae44a93e775600034510
+      internalID: -176370887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0958f3f85d55734c98cec67abdf5943
+      internalID: -2122598472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42291f3d7b9f5304686209811e9c30de
+      internalID: 2052556140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08106b97f772b2f42aafa77ee31080fe
+      internalID: -1188670429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280dd5590f906254bb934bfef8591949
+      internalID: -1109627894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624ff640e4044634e817d1aef177dfa7
+      internalID: -6199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c3b1dc194d9c7418b62212e27a67ef
+      internalID: -1898399570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55aba1e802ec4e4db34a1a2ba4c2979
+      internalID: 425765557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c147d4940c819f24789874526835de13
+      internalID: -1992477447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b228d1f4b8328454eb64c0a7a5035dbf
+      internalID: 682528824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ae86bf8638b0c449b4638a6870b114
+      internalID: -2033208563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff064a9726348a044ab6ffa30f89f35d
+      internalID: 1578250197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd4c73875befd754eb46113506447b15
+      internalID: -1031333158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d400bf09c091fe841bb0f7ad57d93a01
+      internalID: -2022711131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c8679df4a09d040a090f8109e8b00d
+      internalID: -170939423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc2dc8e614993e45aec0a52a0cc2255
+      internalID: 1116312450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de61b42949fbdcb46bf0dde9ccbe0f37
+      internalID: -5721009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Predator-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af61bbd42c21ffb45addf034b88146a8
+      internalID: -456557286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e2859297e3cb3134caa41973535e0ea4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Predator-Sheet_16: 380058050
+      Predator-Sheet_19: -926934003
+      Predator-Sheet_2: 2009690312
+      Predator-Sheet_34: -1774927723
+      Predator-Sheet_33: -512254823
+      Predator-Sheet_40: -2122598472
+      Predator-Sheet_7: -1263335476
+      Predator-Sheet_28: -88606258
+      Predator-Sheet_35: -1999362600
+      Predator-Sheet_55: -5721009
+      Predator-Sheet_6: 1451218194
+      Predator-Sheet_43: -1109627894
+      Predator-Sheet_44: -6199
+      Predator-Sheet_14: -1827428293
+      Predator-Sheet_23: -1807194256
+      Predator-Sheet_52: -2022711131
+      Predator-Sheet_13: 17587252
+      Predator-Sheet_20: 1036780667
+      Predator-Sheet_27: 253140123
+      Predator-Sheet_26: -269598200
+      Predator-Sheet_45: -1898399570
+      Predator-Sheet_11: 585922896
+      Predator-Sheet_18: -610084908
+      Predator-Sheet_8: 103668830
+      Predator-Sheet_50: 1578250197
+      Predator-Sheet_9: -1920081465
+      Predator-Sheet_22: 437107720
+      Predator-Sheet_37: 1752960515
+      Predator-Sheet_41: 2052556140
+      Predator-Sheet_17: 1366995577
+      Predator-Sheet_38: -994567460
+      Predator-Sheet_25: 1854548854
+      Predator-Sheet_12: -1581312082
+      Predator-Sheet_15: 886927764
+      Predator-Sheet_51: -1031333158
+      Predator-Sheet_5: 845732790
+      Predator-Sheet_46: 425765557
+      Predator-Sheet_29: 2094350476
+      Predator-Sheet_36: 1645385741
+      Predator-Sheet_31: 78166084
+      Predator-Sheet_47: -1992477447
+      Predator-Sheet_21: 1543069987
+      Predator-Sheet_32: 346087664
+      Predator-Sheet_0: -937769383
+      Predator-Sheet_54: 1116312450
+      Predator-Sheet_39: -176370887
+      Predator-Sheet_30: -1193791420
+      Predator-Sheet_1: -1620534232
+      Predator-Sheet_24: 2075516530
+      Predator-Sheet_48: 682528824
+      Predator-Sheet_42: -1188670429
+      Predator-Sheet_4: -550719304
+      Predator-Sheet_56: -456557286
+      Predator-Sheet_10: -1692926952
+      Predator-Sheet_53: -170939423
+      Predator-Sheet_49: -2033208563
+      Predator-Sheet_3: 2027131719
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

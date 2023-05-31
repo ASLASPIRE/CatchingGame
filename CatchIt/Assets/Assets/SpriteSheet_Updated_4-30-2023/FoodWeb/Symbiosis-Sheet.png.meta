@@ -1,0 +1,1775 @@
+fileFormatVersion: 2
+guid: 5864dc4fcd6837441b4b6eb4ed05d78a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4056
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df05d72d648cab4c9da7b9e28d6c2a9
+      internalID: -1064826840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 4056
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5dc8effa05903545a9cb002f89b34a2
+      internalID: -430564950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 4056
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5d5024e460f9d46ae129cbea8e4748
+      internalID: -421454430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 4056
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5360774e1b81e8f45ac4dbcadb21c441
+      internalID: -1641778724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4056
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b901f4955573f4ca884f3246ff62f0
+      internalID: 704732424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 4056
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef2749fb09a75c84dbfb2f66f475a990
+      internalID: 486644904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2acb3b16800ad44821815bfb2c2039
+      internalID: 1966756924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b90acdc379c497b4f872a61f91bf4d0d
+      internalID: 521894114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 520f83810aa427b4d95709e34c7e3610
+      internalID: -1953039788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b398b20f5aa1047bb7a5402dd0fafc
+      internalID: 1240653998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c7aee55d1f29804eb032920af72faa2
+      internalID: 2101123477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b35741efbfaf37449f287846cc844a7
+      internalID: 703029034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009af4d5be327ec4ebf56eef5af38602
+      internalID: -2135455048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de299898c3793344b72390acc704ba5
+      internalID: 75077434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea3a8c90b28c07c4298a05a687d23b7e
+      internalID: -429143113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283c775e3c09de1478b7791cced9633f
+      internalID: -1021412490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98207b7c4e7b2e4bbcac05d038b27f9
+      internalID: 1347988088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4173f33e5cb720e4c91c2225022c6933
+      internalID: 322157373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc724b6e55422924a8f57006d818ecbc
+      internalID: -1448372029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f314d4725d6c0b7489c6afd999ad8701
+      internalID: 147605159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb28483b79a60be48bea9b49ece7ba54
+      internalID: -949339394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb5b2a66cbb8bb4d84af92e56b6a5c3
+      internalID: 1388537327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd69fc9c9ced1e47a6d4b525b70b7ef
+      internalID: -104341181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc788d1a6d1bf54c8fbee8364415353
+      internalID: -1089069915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4248af42ec277bc4e8534e7f39e7f845
+      internalID: 1754837951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9985cc77d0c340c41a0b65a838dd00ea
+      internalID: -866263946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93933848b35da164e8f496e7054e8e34
+      internalID: -865015304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e7c834e1f55e645b686a9618073757
+      internalID: -19643704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfd70fc510be6a448be4e1c52f0d4a7
+      internalID: 1991534523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d04944bd7531bb488d56c0a31feee95
+      internalID: -1844575600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e8273a374e9474cb1773af33ea8a9b
+      internalID: -840626050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6852a6cf77bb0847a878a1c9bbcb380
+      internalID: 1715475327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b8a90ebbc50f6408dc2c29c4efba84
+      internalID: -901449153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b3772c6909c874cbd0158a15966cfc
+      internalID: 1148914350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac013e90655e3ba4da233ec0a24ed259
+      internalID: -1735229633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152f6e4f2c6f3ed4cac2d4f34c1611ce
+      internalID: 1304524471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a398058351c1c2945b42382210dd0300
+      internalID: 1484610871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed29d4ac2677e946b66c8923e38a6bd
+      internalID: -1065527253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa773cce1dfdd4049b1b4d45dbd759d3
+      internalID: 1798902826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b908060e853b6642b6c63756d7115c5
+      internalID: 1630364507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010beed5ad3a65640a8bc76056bdfd71
+      internalID: 438163935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce39ece611c82924aa27501f5c604806
+      internalID: 1724789122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b004e961cd99e844aefa26d361a370c
+      internalID: 266317158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d5862cfa67324d439327bff87741a68
+      internalID: 908135347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e746c1b229f508428446d5e75416bc7
+      internalID: -1387809716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df12fb99a849d244c96a520c002b5400
+      internalID: -482868945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 069bdb66ed3b3c54485bb7446e1be56f
+      internalID: 160765916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0260a1f284b3c8d43a77cc1292d800b7
+      internalID: -1563366202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05602326c0ceee4c8e0a0b6c1c15f3c
+      internalID: -1692786160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcca2a2e2ff972b4daacdca9e13c9073
+      internalID: -2066945324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80634a849bd99e3428321d2d1d7d5550
+      internalID: -1306311358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347c4371070f5da4eb7651af09709cb0
+      internalID: -2117625471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d57f76b076f58fd4cb94e034524026c9
+      internalID: 1729305879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6fc223bfcb1a9439a9f83abb369d21
+      internalID: 1817037498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17017c706aee9944db03085d515d2b06
+      internalID: -501652881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44fd7c6703d81f47b666152083d61dd
+      internalID: -528251390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b11a74b4da72ea4b92143a6ed358970
+      internalID: -876678267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df80084dcfdf065479f971c446db2b33
+      internalID: -937214822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f45405ab3ee45344ae90e5f7ecf739c
+      internalID: -1345264404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333ad1200793d704ea2f5b5e7614ff5f
+      internalID: 1632211446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37fd20b6b15252e44b3ceda8665d2417
+      internalID: 479603246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215b762ee81c3a94ba189138bdf1d6d7
+      internalID: -280480024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500e0e374bece7949a9d52e572280099
+      internalID: -195541025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ee7d1148cb0ae48b6a59ddaeac1d0d
+      internalID: -1106875878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c89154f6de2ac4d97fd9efabdc93ba
+      internalID: 903749399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6552f978e87f474a85357c2d7338492
+      internalID: -1559062837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f8174ec64910d468b6202aec9daf1f
+      internalID: -1392287680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04082df94451554bb7e7910f087ce98
+      internalID: -1487616729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79140b379ac8a354f8d9d7d6a2b83917
+      internalID: 1308097211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5c9b61d509ea443b80eb2f75205ffb
+      internalID: 1094349694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc2da9219e30194db23b1e32b23dd7e
+      internalID: -932728632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8d93f2fc7598f4dad651806002089a
+      internalID: -1012794054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea2529e31c86e14c9472aa847ae3f81
+      internalID: -1160324962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Symbiosis-Sheet_73
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b197471d58ebc47859bf80c378e5a9
+      internalID: -1870866944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 64398e1a1a9d21e46b008e42d915c589
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Symbiosis-Sheet_22: -104341181
+      Symbiosis-Sheet_46: 160765916
+      Symbiosis-Sheet_10: 2101123477
+      Symbiosis-Sheet_64: 903749399
+      Symbiosis-Sheet_68: 1308097211
+      Symbiosis-Sheet_52: 1729305879
+      Symbiosis-Sheet_67: -1487616729
+      Symbiosis-Sheet_58: -1345264404
+      Symbiosis-Sheet_12: -2135455048
+      Symbiosis-Sheet_40: 438163935
+      Symbiosis-Sheet_8: -1953039788
+      Symbiosis-Sheet_32: -901449153
+      Symbiosis-Sheet_56: -876678267
+      Symbiosis-Sheet_31: 1715475327
+      Symbiosis-Sheet_53: 1817037498
+      Symbiosis-Sheet_38: 1798902826
+      Symbiosis-Sheet_59: 1632211446
+      Symbiosis-Sheet_1: -430564950
+      Symbiosis-Sheet_63: -1106875878
+      Symbiosis-Sheet_60: 479603246
+      Symbiosis-Sheet_65: -1559062837
+      Symbiosis-Sheet_7: 521894114
+      Symbiosis-Sheet_73: -1870866944
+      Symbiosis-Sheet_43: 908135347
+      Symbiosis-Sheet_19: 147605159
+      Symbiosis-Sheet_29: -1844575600
+      Symbiosis-Sheet_70: -932728632
+      Symbiosis-Sheet_51: -2117625471
+      Symbiosis-Sheet_0: -1064826840
+      Symbiosis-Sheet_55: -528251390
+      Symbiosis-Sheet_37: -1065527253
+      Symbiosis-Sheet_17: 322157373
+      Symbiosis-Sheet_39: 1630364507
+      Symbiosis-Sheet_47: -1563366202
+      Symbiosis-Sheet_20: -949339394
+      Symbiosis-Sheet_35: 1304524471
+      Symbiosis-Sheet_28: 1991534523
+      Symbiosis-Sheet_9: 1240653998
+      Symbiosis-Sheet_26: -865015304
+      Symbiosis-Sheet_14: -429143113
+      Symbiosis-Sheet_11: 703029034
+      Symbiosis-Sheet_27: -19643704
+      Symbiosis-Sheet_54: -501652881
+      Symbiosis-Sheet_24: 1754837951
+      Symbiosis-Sheet_61: -280480024
+      Symbiosis-Sheet_36: 1484610871
+      Symbiosis-Sheet_13: 75077434
+      Symbiosis-Sheet_66: -1392287680
+      Symbiosis-Sheet_34: -1735229633
+      Symbiosis-Sheet_18: -1448372029
+      Symbiosis-Sheet_44: -1387809716
+      Symbiosis-Sheet_49: -2066945324
+      Symbiosis-Sheet_15: -1021412490
+      Symbiosis-Sheet_41: 1724789122
+      Symbiosis-Sheet_45: -482868945
+      Symbiosis-Sheet_6: 1966756924
+      Symbiosis-Sheet_16: 1347988088
+      Symbiosis-Sheet_3: -1641778724
+      Symbiosis-Sheet_4: 704732424
+      Symbiosis-Sheet_25: -866263946
+      Symbiosis-Sheet_57: -937214822
+      Symbiosis-Sheet_2: -421454430
+      Symbiosis-Sheet_23: -1089069915
+      Symbiosis-Sheet_50: -1306311358
+      Symbiosis-Sheet_33: 1148914350
+      Symbiosis-Sheet_62: -195541025
+      Symbiosis-Sheet_30: -840626050
+      Symbiosis-Sheet_42: 266317158
+      Symbiosis-Sheet_48: -1692786160
+      Symbiosis-Sheet_69: 1094349694
+      Symbiosis-Sheet_5: 486644904
+      Symbiosis-Sheet_71: -1012794054
+      Symbiosis-Sheet_72: -1160324962
+      Symbiosis-Sheet_21: 1388537327
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

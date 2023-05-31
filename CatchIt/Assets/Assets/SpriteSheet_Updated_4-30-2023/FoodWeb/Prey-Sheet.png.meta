@@ -1,0 +1,1731 @@
+fileFormatVersion: 2
+guid: 41d2fec8d6e502247b53640458427f30
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Prey-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e4e956651426844bbb13ea9646ac88b
+      internalID: 1943317455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28166d08dbbb1394c9cbedfc97ecc229
+      internalID: 1643619650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4d48f9a19ed58d459244f005678df18
+      internalID: -778792909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d0bbd2f29e19cd479981ea750f23256
+      internalID: -885948165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeaf47af20edd6440a1674a88059ecb7
+      internalID: 1445656776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3718
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fbb8234687f384f96cbf350673f85c
+      internalID: 147796292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afce832f27523b84cb13f725c8171da2
+      internalID: -1102531648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45f7f988ff935c43a6a786feee0a583
+      internalID: -1686187646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03bd16d346a3bb47b7e54a385232b1d
+      internalID: 369945747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b855a017bf316d64797574cf82088c5e
+      internalID: -1231268993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc91b99ee16005449f050cf350e3019
+      internalID: -666432586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3380
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4e855ba8955f0488db17fa478bc0f4
+      internalID: -514593100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff39dcac01ad2b6449854f4d5c61b734
+      internalID: -958053198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd782b14c1ac57643aec3aa96a381de1
+      internalID: 33836678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba5756a1e881eb4daacf186ec2e2dfa
+      internalID: -1130422431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c827ddfcca4bc254b8d03fcc2e49e738
+      internalID: 2140760157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db85b18807bb6da4f9da6d7722abbe4d
+      internalID: 2118234592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 3042
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832796759adc30e47ad690620677bab8
+      internalID: -1183332174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bfe694b4c5a1814dbf2b5fb07ee8fc4
+      internalID: -2039822048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41605ec6d83f0844d9228c1aebebd1e1
+      internalID: -1127661194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb20463530cc5744696a028ff08ecd22
+      internalID: -966673759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc31904537ff0945a90c9a91ca37826
+      internalID: 108359567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057ee6ad304649c45b31781d2d5e10ef
+      internalID: -1126784504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2704
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901aeaf04b9241d4facc196bf29fb4c1
+      internalID: 111098837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786478fe13d12c34691bcf0210c290a6
+      internalID: 997642597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6da0b38c3b97d04499eee1025bef5bb
+      internalID: 227778227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4abe40af0a9b84ca61410dc3aadddd
+      internalID: -1360654883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a84f0e0219f174a85899bcfb0c40ce
+      internalID: 618439259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc773ba9539535479256a5d55286e23
+      internalID: 110258087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2366
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6aecc86d4b0044a8686fd34e335d4c
+      internalID: -1985339414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6fcba791c928cc4dbee28fcd87bca97
+      internalID: -639041837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540a9cf859d48df43b90f33e312db23b
+      internalID: -439823016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 473498aadd722e34a833cf17e342f42b
+      internalID: 7661725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47a4ea614e1f21418abf3405179abcd
+      internalID: 1736065888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598a81d9dfa159f40979a528cfe47cec
+      internalID: -2008903040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 2028
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ccf0df5ad664446a9c56b3e584e3a3
+      internalID: -985772458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25253ef1548eaa4d96c2962b47a37cd
+      internalID: -1916026871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a31b8c12eabe65b49a4c1fd7a2d4e5bb
+      internalID: -153336853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f834e932f521bb2499a6866dff05af7a
+      internalID: -1878276466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62f93974f4888f468cb0b5a599215cb
+      internalID: -1564346480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0263b12065a37714ab3e20734981f88f
+      internalID: 867426400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_41
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1690
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab25d91fdc27bb14d8906745ae404133
+      internalID: -2011750580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919e03faf5a81bb4396f501b44ca727c
+      internalID: 732443017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_43
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30683f2be2258da45bc5c9daf84ec592
+      internalID: -2722481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_44
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b7091e06290e14f87a8fbc3206eb92
+      internalID: 289951597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cfb195feaecc7646a89e9c27c3ed9e9
+      internalID: -1754808596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4486881e40140674d99953afe9d66cdd
+      internalID: -403450793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_47
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1352
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efa7880a93e604439ec5cde4a8fd57c
+      internalID: -870498404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9999f17578393ae41bf60ad6bc78a386
+      internalID: 1571054628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6898aae639fc604d948d2286b47fff7
+      internalID: -1316804433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_50
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a3e227da65d9849a235b7d107e9554
+      internalID: 1588910217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_51
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce90bcdc7ccad544b430cc2b79aebe9
+      internalID: -1547009952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_52
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94c3e204776a044a93e2e3649667aec
+      internalID: -376153212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_53
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 1014
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5f754ca020ae04cbd5cca49d44b05d
+      internalID: 1223702112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e55d1398b65fca4589c14298f119eba
+      internalID: -363331396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_55
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34cfa478fa1a6ac4bad9294b541b2686
+      internalID: 309774818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_56
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47dfd8aa12f208247bb0e54170818d67
+      internalID: -1575112007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_57
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0739697f1f718e741b27d6448209775f
+      internalID: -1269783196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_58
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d80e87d77ad164bb0f825252fef327
+      internalID: 91277819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_59
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 676
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 250db64ed8eba164f955eab0d7c9f20b
+      internalID: 1071456617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ae123232569854591519755887b971
+      internalID: 286743197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_61
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1a74c6ca061074c9cf82bde45db9f4
+      internalID: 137990076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_62
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a49a7117c57569a45a3455017a2a0cbe
+      internalID: -765220768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_63
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8d451acb7f81f478b0601eabb3d6fa
+      internalID: -1176626930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_64
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf897b11821d60f4c8ea6c263d962c7c
+      internalID: -839799061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_65
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 338
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7af4642df236bf4eb843f83b15626f1
+      internalID: 826615542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69113331748aa6a4a8e1c6ad91b98df4
+      internalID: -1892669094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_67
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2364952edee030d4580456ab0285f0a2
+      internalID: -1019148282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_68
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20095cc7dd355a54cb62afe1e8eee4c8
+      internalID: 477808885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_69
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704b88bdd8eda6846a5ec32e9f86c722
+      internalID: -719390623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_70
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a45fd8be4969ec948ae0a02511712fad
+      internalID: 1952088687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Prey-Sheet_71
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 640
+        height: 338
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82b39af5d4250c47a1024f231f7173b
+      internalID: 1622870067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f5cdbec5267136045b2b3449b5c23c54
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Prey-Sheet_41: -2011750580
+      Prey-Sheet_67: -1019148282
+      Prey-Sheet_71: 1622870067
+      Prey-Sheet_9: -1231268993
+      Prey-Sheet_32: 7661725
+      Prey-Sheet_64: -839799061
+      Prey-Sheet_66: -1892669094
+      Prey-Sheet_5: 147796292
+      Prey-Sheet_60: 286743197
+      Prey-Sheet_22: -1126784504
+      Prey-Sheet_18: -2039822048
+      Prey-Sheet_25: 227778227
+      Prey-Sheet_52: -376153212
+      Prey-Sheet_13: 33836678
+      Prey-Sheet_10: -666432586
+      Prey-Sheet_45: -1754808596
+      Prey-Sheet_6: -1102531648
+      Prey-Sheet_30: -639041837
+      Prey-Sheet_17: -1183332174
+      Prey-Sheet_62: -765220768
+      Prey-Sheet_47: -870498404
+      Prey-Sheet_33: 1736065888
+      Prey-Sheet_15: 2140760157
+      Prey-Sheet_27: 618439259
+      Prey-Sheet_19: -1127661194
+      Prey-Sheet_43: -2722481
+      Prey-Sheet_24: 997642597
+      Prey-Sheet_28: 110258087
+      Prey-Sheet_29: -1985339414
+      Prey-Sheet_26: -1360654883
+      Prey-Sheet_44: 289951597
+      Prey-Sheet_49: -1316804433
+      Prey-Sheet_68: 477808885
+      Prey-Sheet_23: 111098837
+      Prey-Sheet_70: 1952088687
+      Prey-Sheet_40: 867426400
+      Prey-Sheet_21: 108359567
+      Prey-Sheet_35: -985772458
+      Prey-Sheet_11: -514593100
+      Prey-Sheet_3: -885948165
+      Prey-Sheet_38: -1878276466
+      Prey-Sheet_34: -2008903040
+      Prey-Sheet_14: -1130422431
+      Prey-Sheet_4: 1445656776
+      Prey-Sheet_7: -1686187646
+      Prey-Sheet_36: -1916026871
+      Prey-Sheet_48: 1571054628
+      Prey-Sheet_59: 1071456617
+      Prey-Sheet_8: 369945747
+      Prey-Sheet_12: -958053198
+      Prey-Sheet_53: 1223702112
+      Prey-Sheet_55: 309774818
+      Prey-Sheet_65: 826615542
+      Prey-Sheet_0: 1943317455
+      Prey-Sheet_20: -966673759
+      Prey-Sheet_61: 137990076
+      Prey-Sheet_31: -439823016
+      Prey-Sheet_37: -153336853
+      Prey-Sheet_58: 91277819
+      Prey-Sheet_42: 732443017
+      Prey-Sheet_39: -1564346480
+      Prey-Sheet_16: 2118234592
+      Prey-Sheet_50: 1588910217
+      Prey-Sheet_51: -1547009952
+      Prey-Sheet_63: -1176626930
+      Prey-Sheet_56: -1575112007
+      Prey-Sheet_2: -778792909
+      Prey-Sheet_69: -719390623
+      Prey-Sheet_1: 1643619650
+      Prey-Sheet_46: -403450793
+      Prey-Sheet_54: -363331396
+      Prey-Sheet_57: -1269783196
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
