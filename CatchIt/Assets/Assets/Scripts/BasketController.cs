@@ -25,6 +25,7 @@ public class BasketController : MonoBehaviour
     // UI - Must externally set text
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI livesText;
+    public Joystick joystick;
     public int score = 0;
     public int lives = 5;
     public int score_increment_value = 100;
@@ -59,70 +60,73 @@ public class BasketController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
     }
 
     // FixedUpdate is called 32 times every second (or whatever predetermined framerate)
    void FixedUpdate()
-{
-    float h = 0f;
+   {
+       float h = 0f;
 
-    // Handle keyboard input
-    if (Input.GetKey(KeyCode.LeftArrow))
-    {
-        h = -1f;
-    }
-    else if (Input.GetKey(KeyCode.RightArrow))
-    {
-        h = 1f;
-    }
+       // Handle keyboard input
+       if (Input.GetKey(KeyCode.LeftArrow))
+       {
+           h = -1f;
+       }
+       else if (Input.GetKey(KeyCode.RightArrow))
+       {
+           h = 1f;
+       }
 
-    // Handle touch input
-    if (Input.touchCount > 0)
-    {
-        Touch touch = Input.GetTouch(0);
-        float touchX = touch.position.x;
-        float screenMiddleX = Screen.width / 2f;
+       // Handle touch input
+       if (Input.touchCount > 0)
+       {
+           //Touch touch = Input.GetTouch(0);
+           //float touchX = touch.position.x;
+           //float screenMiddleX = Screen.width / 2f;
 
-        if (touchX < screenMiddleX)
-        {
-            h = -1f;
-        }
-        else if (touchX > screenMiddleX)
-        {
-            h = 1f;
-        }
-    }
+           //if (touchX < screenMiddleX)
+           //{
+           //    h = -1f;
+           //}
+           //else if (touchX > screenMiddleX)
+           //{
+           //    h = 1f;
+           //}
 
-    if (h > 0)
-    {
-        if (transform.position.x < xBoundRight)
-        {
-            myBody.AddForce(Vector2.right * acceleration);
-        }
-        else
-        {
-            myBody.AddForce(Vector2.zero);
-        }
-    }
-    else if (h < 0)
-    {
-        if (transform.position.x > xBoundLeft)
-        {
-            myBody.AddForce(Vector2.left * acceleration);
-        }
-        else
-        {
-            myBody.AddForce(Vector2.zero);
-        }
-    }
-    else
-    {
-        myBody.AddForce(myBody.velocity * deceleration);
-    }
+           h = joystick.Horizontal;
+       }
 
-    transform.position = new Vector2(Mathf.Clamp(transform.position.x, xBoundLeft, xBoundRight), transform.position.y);
-    myBody.velocity = new Vector2(Mathf.Clamp(myBody.velocity.x, -maxSpeed, maxSpeed), myBody.velocity.y);
-}
+       if (h > 0)
+       {
+           if (transform.position.x < xBoundRight)
+           {
+               myBody.AddForce(Vector2.right * acceleration);
+           }
+           else
+           {
+               myBody.AddForce(Vector2.zero);
+           }
+       }
+       else if (h < 0)
+       {
+           if (transform.position.x > xBoundLeft)
+           {
+               myBody.AddForce(Vector2.left * acceleration);
+           }
+           else
+           {
+               myBody.AddForce(Vector2.zero);
+           }
+       }
+       else
+       {
+           myBody.AddForce(myBody.velocity * deceleration);
+       }
+
+       transform.position = new Vector2(Mathf.Clamp(transform.position.x, xBoundLeft, xBoundRight), transform.position.y);
+       myBody.velocity = new Vector2(Mathf.Clamp(myBody.velocity.x, -maxSpeed, maxSpeed), myBody.velocity.y);
+   }
 
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -136,7 +140,7 @@ public class BasketController : MonoBehaviour
             Destroy(collision.gameObject);
             if (tag == "lightning_bolt")
             {
-                StartCoroutine(LightningBoltPowerup(20, 100, 10));
+                StartCoroutine(LightningBoltPowerup(15, 100, 10));
                 //Destroy(collision.gameObject);
             }
             else if (tag == "stopwatch")
@@ -146,7 +150,7 @@ public class BasketController : MonoBehaviour
             }
             else if (tag == "burger")
             {
-                StartCoroutine(BurgerPowerup(2, 10));
+                StartCoroutine(BurgerPowerup(1.5f, 10));
                 //Destroy(collision.gameObject);
             }
             else if (tag == "multiplication")

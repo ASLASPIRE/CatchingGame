@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 {
 
     [SerializeField] private GameObject mainMenuPanel;
-    //[SerializeField] private GameObject tutorialPanel;
+    [SerializeField] private GameObject tutorialPanel;
     [SerializeField] private GameObject vocabPanel;
     [SerializeField] private GameObject difficultyPanel;
 
@@ -37,7 +37,7 @@ public class MainMenu : MonoBehaviour
         Globals.tutorial = true; 
         mainMenuPanel.SetActive(false);
         SceneManager.LoadScene("Tutorial");
-        //tutorialPanel.SetActive(true);
+        tutorialPanel.SetActive(true);
     }
 
     public void onPlayButtonPress()
@@ -51,7 +51,7 @@ public class MainMenu : MonoBehaviour
     public void onBackButtonPress()
     {
         mainMenuPanel.SetActive(true);
-        //tutorialPanel.SetActive(false);
+        tutorialPanel.SetActive(false);
     }
 
     public void onBiologyButtonPress()
