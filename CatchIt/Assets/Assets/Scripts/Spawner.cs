@@ -41,6 +41,9 @@ public class Spawner : MonoBehaviour
     public float changeDelay;
     public LevelOperator levelOperator; 
     public List<RuntimeAnimatorController> vocabList;
+    public VideoPlayerController videoPlayerController;
+
+    private List<string> vidVocabList;
 
     // Start is called before the first frame update
     void Start()
@@ -69,7 +72,7 @@ public class Spawner : MonoBehaviour
         //InvokeRepeating("ChangeCorrectWord", 1f, changeDelay);
         ChangeCorrectWord();
         
-        StartCoroutine(SpawnRandomGameObject());
+        //StartCoroutine(SpawnRandomGameObject());
     }
 
     // Update is called once per frame
@@ -78,32 +81,59 @@ public class Spawner : MonoBehaviour
         // Empty
     }
 
-    IEnumerator SpawnRandomGameObject()
+    public void StartSpawningWords()
+    {
+        StartCoroutine(SpawnRandomGameObject());
+    }
+
+    public IEnumerator SpawnRandomGameObject()
     {
         yield return new WaitForSeconds(Globals.spawnRate);
-        
         int randomVocabWordIndex = Random.Range(0, smallWords.Count);
-        //Debug.Log($"randomVocabWordIndex: {randomVocabWordIndex}");
-        //Debug.Log($"Size/Count of smallWords: {smallWords.Count}");
-        //Debug.Log("\n");
-        if (word.GetComponent<TextMeshPro>() != null )
+        if (word.GetComponent<TextMeshPro>() != null)
         {
             word.GetComponent<TextMeshPro>().text = smallWords[randomVocabWordIndex];
             Rigidbody2D wordRigidBody = word.GetComponent<Rigidbody2D>();
             wordRigidBody.gravityScale = fallingSpeed;
             Instantiate(word, new Vector2(Random.Range(xBoundLeft, xBoundRight), yBound), Quaternion.identity);
-        } else
+        }
+        else
         {
             Debug.Log("Problem with word! TextMeshPro doesn't exist!");
         }
 
-        //System.Random random = new System.Random();
-        //if (random.Next(10) == 0)
         if (Random.Range(0, 10) == 0)
         {
             StartCoroutine(SpawnRandomPowerUp());
         }
         StartCoroutine(SpawnRandomGameObject());
+
+
+
+        yield return new WaitForSeconds(Globals.spawnRate);
+        
+        //int randomVocabWordIndex = Random.Range(0, smallWords.Count);
+        ////Debug.Log($"randomVocabWordIndex: {randomVocabWordIndex}");
+        //Debug.Log($"Size/Count of smallWords: {smallWords.Count}");
+        ////Debug.Log("\n");
+        //if (word.GetComponent<TextMeshPro>() != null )
+        //{
+        //    word.GetComponent<TextMeshPro>().text = smallWords[randomVocabWordIndex];
+        //    Rigidbody2D wordRigidBody = word.GetComponent<Rigidbody2D>();
+        //    wordRigidBody.gravityScale = fallingSpeed;
+        //    Instantiate(word, new Vector2(Random.Range(xBoundLeft, xBoundRight), yBound), Quaternion.identity);
+        //} else
+        //{
+        //    Debug.Log("Problem with word! TextMeshPro doesn't exist!");
+        //}
+
+        ////System.Random random = new System.Random();
+        ////if (random.Next(10) == 0)
+        //if (Random.Range(0, 10) == 0)
+        //{
+        //    StartCoroutine(SpawnRandomPowerUp());
+        //}
+        //StartCoroutine(SpawnRandomGameObject());
     }
 
     IEnumerator SpawnRandomPowerUp()
@@ -139,41 +169,54 @@ public class Spawner : MonoBehaviour
 
     public void ChangeCorrectWord()
     {
-
-        
-        
-
-        // // Choose random correct word
-        vocabList = gifController.currentVocabList;
-        //Assign by level 
-        if (!Globals.tutorial){
-        vocabList = levelOperator.levelListCreator(gifController.currentVocabList);
-       
-        }
-
-
-
-        int randomWordIndex = Random.Range(0, vocabList.Count);
-        if (Globals.tutorial){ randomWordIndex = 0; }
-        Debug.Log($"randomWordIndex = {randomWordIndex}");
-        string randomWord = vocabList[randomWordIndex].name;
-
-        correctController = vocabList[randomWordIndex];
+        vidVocabList = videoPlayerController.VocabWordToPathDict.Keys.ToList();
+        int randomWordIndex = Random.Range(0, vidVocabList.Count);
+        string randomWord = vidVocabList[randomWordIndex];
         correctWord = randomWord;
-
-        // Make smaller list of words to fall, including correct word
         smallWords.Clear();
         smallWords.Add(correctWord);
         for (int i = 0; i < vocabListSize; i++)
         {
-            int randomVocabWordIndex = Random.Range(0, vocabList.Count);
-            smallWords.Add(vocabList[randomVocabWordIndex].name);
-            smallWords.Add(correctWord);
+            int randomVocabWordIndex = Random.Range(0, vidVocabList.Count);
+            smallWords.Add(vidVocabList[randomVocabWordIndex]);
         }
+        Debug.Log("about to play video");
+        videoPlayerController.PlayVideo(correctWord);
 
-        // Play video/GIF
-        Debug.Log("made it here 1");
-        gifController.ChangeAnimationState(correctController);
+
+
+
+        //// // Choose random correct word
+        //vocabList = gifController.currentVocabList;
+        ////Assign by level 
+        //if (!Globals.tutorial){
+        //vocabList = levelOperator.levelListCreator(gifController.currentVocabList);
+       
+        //}
+
+
+
+        //int randomWordIndex = Random.Range(0, vocabList.Count);
+        //if (Globals.tutorial){ randomWordIndex = 0; }
+        //Debug.Log($"randomWordIndex = {randomWordIndex}");
+        //string randomWord = vocabList[randomWordIndex].name;
+
+        //correctController = vocabList[randomWordIndex];
+        //correctWord = randomWord;
+
+        //// Make smaller list of words to fall, including correct word
+        //smallWords.Clear();
+        //smallWords.Add(correctWord);
+        //for (int i = 0; i < vocabListSize; i++)
+        //{
+        //    int randomVocabWordIndex = Random.Range(0, vocabList.Count);
+        //    smallWords.Add(vocabList[randomVocabWordIndex].name);
+        //    smallWords.Add(correctWord);
+        //}
+
+        //// Play video/GIF
+        //Debug.Log("made it here 1");
+        //gifController.ChangeAnimationState(correctController);
 
         //int randomIndex = Random.Range(0, words.Count);
         //correctLink = links[randomIndex];

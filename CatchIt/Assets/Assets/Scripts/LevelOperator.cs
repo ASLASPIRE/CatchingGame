@@ -130,9 +130,9 @@ public class LevelOperator : MonoBehaviour
             Time.timeScale = 1.0f; 
             spawnSpeed.fallingSpeed = Globals.fallingSpeed;
             gif.SetActive(true);
-            webcam.turnOffWebcam();    
+            webcam.turnOffWebcam();
+            spawnSpeed.StartSpawningWords();
             levelOperator.SetActive(false);
-
         }
         
 

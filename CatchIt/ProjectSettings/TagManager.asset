@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - basket
+  - word
+  - burger
+  - lightning_bolt
+  - multiplication
+  - stopwatch
   layers:
   - Default
   - TransparentFX
@@ -40,4 +46,34 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sky
+    uniqueID: 3438996797
+    locked: 0
+  - name: Sun
+    uniqueID: 1208474265
+    locked: 0
+  - name: Clouds
+    uniqueID: 1931243807
+    locked: 0
+  - name: Trees
+    uniqueID: 3180818807
+    locked: 0
+  - name: Leaves
+    uniqueID: 62529697
+    locked: 0
+  - name: Ground
+    uniqueID: 1632900339
+    locked: 0
+  - name: Rocks
+    uniqueID: 2008863539
+    locked: 0
+  - name: Falling Words
+    uniqueID: 1213879003
+    locked: 0
+  - name: Basket
+    uniqueID: 2887743919
+    locked: 0
+  - name: Fences
+    uniqueID: 552278009
     locked: 0

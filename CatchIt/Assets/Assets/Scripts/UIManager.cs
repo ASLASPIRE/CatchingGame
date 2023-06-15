@@ -17,7 +17,7 @@ public class UIManager : MonoBehaviour
 
     public GameObject nextLevelPanel;
     public GameObject spawner;
-    public bool called; 
+    public bool isNextLevelPanelCalled; 
 
     public bool isGameOver = false;
 
@@ -26,15 +26,15 @@ public class UIManager : MonoBehaviour
     public GameObject makeWebcamWork;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {   //Time.timeScale = 0;
-        //Disables panel if active
-        called = false;
+        //Disables panels if active
+        isNextLevelPanelCalled = false;
         gameOverPanel.SetActive(false);
         restartText.gameObject.SetActive(false);
         leaderboardPanel.SetActive(false);
         nextLevelPanel.SetActive(false);
-        //Time.timeScale = 1.0f;
+        Time.timeScale = 1.0f;
         levelManager.SetActive(false);
         winPanel.SetActive(false);
     }
@@ -54,18 +54,16 @@ public class UIManager : MonoBehaviour
         {
             isGameOver = true;
 
-            StartCoroutine(GameOverSequence());
+            StartCoroutine(StartGameOverSequence());
         }
 
         //change to basket.score
-        if (basket.score >= 1000 && !called){
+        if (basket.score >= basket.scoreNeeded && !isNextLevelPanelCalled){
             
             if (Globals.level == 3){
-                winSequence();
+                StartWinSequence();
             }
-            NextLevelSequence();
-            
-            called = true;
+            StartNextLevelSequence();
         }
 
 
@@ -90,8 +88,8 @@ public class UIManager : MonoBehaviour
 
     }
 
-    //controls game over canvas and there's a brief delay between main Game Over text and option to restart/quit text
-    public IEnumerator GameOverSequence()
+    // Controls game over canvas and there's a brief delay between main Game Over text and option to restart/quit text
+    public IEnumerator StartGameOverSequence()
     {
         Time.timeScale = 0;
         playfabManager.SendLeaderboard(basket.score);
@@ -104,11 +102,11 @@ public class UIManager : MonoBehaviour
         restartText.gameObject.SetActive(true);
     }
 
-    public void NextLevelSequence()
+    public void StartNextLevelSequence()
     {   
         Debug.Log("level is");
         Debug.Log(Globals.level);
-        called = true;
+        isNextLevelPanelCalled = true;
         spawner.SetActive(false);
         //Time.timeScale = 0;
         //playfabManager.SendLeaderboard(basket.score);
@@ -134,20 +132,21 @@ public class UIManager : MonoBehaviour
         //restartText.gameObject.SetActive(true);
     }
 
-   public void winSequence(){
-    nextLevelPanel.SetActive(false);
-    winPanel.SetActive(true);
-   }
+    public void StartWinSequence()
+    {
+        nextLevelPanel.SetActive(false);
+        winPanel.SetActive(true);
+    }
 
-
-    public void winButton(){
+    public void winButton()
+    {
         SceneManager.LoadScene("Main Menu");
     }
 
-    public void nextClick(){
-    Time.timeScale = 1.0f;
-    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+    public void nextClick()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void OnGetLeaderboardClick()

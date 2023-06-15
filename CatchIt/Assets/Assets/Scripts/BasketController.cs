@@ -9,202 +9,163 @@ using UnityEngine.UIElements;
 public class BasketController : MonoBehaviour
 {
     // Managers
+    [Header("Managers")]
     [SerializeField] private PlayfabManager playfabManager;
     [SerializeField] private UIManager uiManager;
     [SerializeField] private Spawner spawner;
 
     private Rigidbody2D myBody;
-    private BoxCollider2D topCollider;
 
     // Parameters
-    public float xBoundLeft, xBoundRight;
-    public float maxSpeed = 5;
-    public float acceleration = 10;
-    public float deceleration = -5;
+    [Header("Player Parameters")]
+    public float MaxSpeed = 5;
+    public float Acceleration = 10;
+    public float Deceleration = -5;
 
     // UI - Must externally set text
-    public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI livesText;
-    public Joystick joystick;
-    public int score = 0;
-    public int lives = 5;
-    public int score_increment_value = 100;
+    [Header("UI Elements")]
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI livesText;
+    [SerializeField] private Joystick joystick;
+    public int score { get; set; } = 0;
+    public int scoreNeeded { get; set; } = 1000;
+    public int lives { get; set; } = 5;
+    private int score_increment_value = 100;
 
     // Animations
-    public GameObject loseLife; // -1 animation
-    public GameObject increaseScore; // +100 animation
+    [Header("Animations")]
+    public Animator loseLifeAnimation; // -1 animation
+    public Animator increaseScoreAnimation; // +100 animation
 
-    // Trigger enter stuff
+    // Check if word entered trigger
     private bool enter = false;
 
+    // Booleans for powerups
     private bool isLightning = false;
     private bool isStopwatch = false;
     private bool isBurger = false;
     private bool isMultiplier = false;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         myBody = GetComponent<Rigidbody2D>();
-        topCollider = GetComponentInChildren<BoxCollider2D>();
-        scoreText.text = $"Score: {score}";
-        livesText.text = $"Lives: {lives}";
+
+        // Set UI text
+        UpdateScoreUIText(score);
+        UpdateLivesUIText(lives);
 
         score_increment_value = Globals.incrementValue;
-        TextMeshProUGUI textMesh = increaseScore.GetComponent<TextMeshProUGUI>();
+
+        // Correct text of "increasing score" animation
+        TextMeshProUGUI textMesh = increaseScoreAnimation.GetComponent<TextMeshProUGUI>();
         textMesh.text = "+" + score_increment_value.ToString();
-
-        loseLife.SetActive(false);
-        increaseScore.SetActive(false);
     }
-    // Update is called once per frame
-    void Update()
+
+    private void UpdateScoreUIText(int newScore)
     {
-
+        scoreText.text = $"Score: {newScore} / {scoreNeeded}";
     }
 
-    // FixedUpdate is called 32 times every second (or whatever predetermined framerate)
-   void FixedUpdate()
-   {
-       float h = 0f;
+    private void UpdateLivesUIText(int newLives)
+    {
+        livesText.text = $"Lives: {newLives}";
+    }
 
-       // Handle keyboard input
-       if (Input.GetKey(KeyCode.LeftArrow))
-       {
-           h = -1f;
-       }
-       else if (Input.GetKey(KeyCode.RightArrow))
-       {
-           h = 1f;
-       }
+    // FixedUpdate is called 32 times every second (or whatever predetermined framerate) and is useful for physics stuff
+    private void FixedUpdate()
+    {
+        // Handle player movement left and right
+        float horizontalInput = Input.GetAxis("Horizontal");
 
-       // Handle touch input
-       if (Input.touchCount > 0)
-       {
-           //Touch touch = Input.GetTouch(0);
-           //float touchX = touch.position.x;
-           //float screenMiddleX = Screen.width / 2f;
+        if (Input.touchCount > 0)
+        {
+            horizontalInput = joystick.Horizontal;
+        }
 
-           //if (touchX < screenMiddleX)
-           //{
-           //    h = -1f;
-           //}
-           //else if (touchX > screenMiddleX)
-           //{
-           //    h = 1f;
-           //}
-
-           h = joystick.Horizontal;
-       }
-
-       if (h > 0)
-       {
-           if (transform.position.x < xBoundRight)
-           {
-               myBody.AddForce(Vector2.right * acceleration);
-           }
-           else
-           {
-               myBody.AddForce(Vector2.zero);
-           }
-       }
-       else if (h < 0)
-       {
-           if (transform.position.x > xBoundLeft)
-           {
-               myBody.AddForce(Vector2.left * acceleration);
-           }
-           else
-           {
-               myBody.AddForce(Vector2.zero);
-           }
-       }
-       else
-       {
-           myBody.AddForce(myBody.velocity * deceleration);
-       }
-
-       transform.position = new Vector2(Mathf.Clamp(transform.position.x, xBoundLeft, xBoundRight), transform.position.y);
-       myBody.velocity = new Vector2(Mathf.Clamp(myBody.velocity.x, -maxSpeed, maxSpeed), myBody.velocity.y);
-   }
-
+        myBody.velocity = new Vector2(horizontalInput * MaxSpeed, myBody.velocity.y);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!enter)
+        if (enter)
         {
-            enter = true;
-            Debug.Log($"collision tag: {collision.tag}");
-            GameObject gameObject = collision.gameObject;
-            string tag = collision.tag;
-            Destroy(collision.gameObject);
-            if (tag == "lightning_bolt")
+            return;
+        }
+        enter = true;
+
+        GameObject colliderGameObject = collision.gameObject;
+        string tag = collision.tag;
+        Destroy(collision.gameObject);
+
+        Debug.Log($"collision tag: {tag}");
+
+        if (tag == "lightning_bolt")
+        {
+            StartCoroutine(LightningBoltPowerup(15, 100, 10));
+        }
+        else if (tag == "stopwatch")
+        {
+            StartCoroutine(StopwatchPowerup(0.05f, 10));
+        }
+        else if (tag == "burger")
+        {
+            StartCoroutine(BurgerPowerup(1.5f, 10));
+        }
+        else if (tag == "multiplication")
+        {
+            StartCoroutine(MultiplicationPowerup(2, 10));
+        }
+
+        if (tag == "word")
+        {
+            TextMeshPro textMeshPro = colliderGameObject.GetComponent<TextMeshPro>();
+            Debug.Log($"collision word: {textMeshPro.text}");
+            if (textMeshPro == null)
             {
-                StartCoroutine(LightningBoltPowerup(15, 100, 10));
-                //Destroy(collision.gameObject);
-            }
-            else if (tag == "stopwatch")
-            {
-                StartCoroutine(StopwatchPowerup(0.05f, 10));
-                //Destroy(collision.gameObject);
-            }
-            else if (tag == "burger")
-            {
-                StartCoroutine(BurgerPowerup(1.5f, 10));
-                //Destroy(collision.gameObject);
-            }
-            else if (tag == "multiplication")
-            {
-                StartCoroutine(MultiplicationPowerup(2, 10));
-                //Destroy(collision.gameObject);
+                throw new System.Exception("Falling word does not contain a TextMeshPro element.");
             }
 
-            if (tag == "word")
+            if (spawner == null)
             {
-                TextMeshPro textMeshPro = gameObject.GetComponent<TextMeshPro>();
-                Debug.Log($"collision word: {textMeshPro.text}");
-                if (textMeshPro != null)
+                throw new System.Exception("Ensure a spawner GameObject exists and is linked to this script.");
+            }
+
+            string textWord = textMeshPro.text;
+
+            if (string.Equals(textWord, spawner.correctWord))
+            {
+                // Player caught the correct word, increase score
+                score += score_increment_value;
+                UpdateScoreUIText(score);
+                increaseScoreAnimation.SetTrigger("playAnimation");
+
+                // Choose the next word to catch
+                spawner.ChangeCorrectWord();
+
+                // Gray out the current words on the screen so players don't accidentally catch them
+                GameObject[] currentWords = GameObject.FindGameObjectsWithTag("word");
+                foreach (GameObject word in currentWords)
                 {
-                    string textWord = textMeshPro.text;
-                    if (spawner != null)
-                    {
-                        if (string.Equals(textWord, spawner.correctWord))
-                        {
-                            score = score + score_increment_value;
-                            scoreText.text = $"Score: {score} / 1000";
-                            increaseScore.SetActive(true);
-                            increaseScore.GetComponent<Animator>().Play("increase_score_text", 0, 0.0f);
-                            spawner.ChangeCorrectWord();
-                            GameObject[] currentWords = GameObject.FindGameObjectsWithTag("word");
-                            foreach (GameObject word in currentWords)
-                            {
-                                TextMeshPro wordTextMeshPro = word.GetComponent<TextMeshPro>();
-                                wordTextMeshPro.color = Color.gray;
-                                CircleCollider2D circleCollider = word.GetComponent<CircleCollider2D>();
-                                circleCollider.enabled = false;
-                            }
-                            //Debug.Log($"Score: {score}");
-                        }
-                        else
-                        {
-                            lives--;
-                            livesText.text = $"Lives: {lives}";
-                            loseLife.SetActive(true);
-                            loseLife.GetComponent<Animator>().Play("lose_life_text", 0, 0.0f);
-                            //loseLife.SetActive(false);
-                            //Debug.Log($"Lives: {lives}");
-
-                            if (lives == 0)
-                            {
-                                uiManager.isGameOver = true;
-                                StartCoroutine(uiManager.GameOverSequence());
-                            }
-                        }
-                    }
+                    TextMeshPro wordTextMeshPro = word.GetComponent<TextMeshPro>();
+                    wordTextMeshPro.color = Color.gray;
+                    CircleCollider2D circleCollider = word.GetComponent<CircleCollider2D>();
+                    circleCollider.enabled = false;
                 }
+            }
+            else
+            {
+                // Player caught the wrong word, decrease lives
+                lives--;
+                UpdateLivesUIText(lives);
+                loseLifeAnimation.SetTrigger("playAnimation");
 
-                Destroy(collision.gameObject);
-                //Debug.Log("object collected and destroyed");
+                // If lives are at 0, game over
+                if (lives == 0)
+                {
+                    uiManager.isGameOver = true;
+                    StartCoroutine(uiManager.StartGameOverSequence());
+                }
             }
         }
     }
@@ -222,15 +183,15 @@ public class BasketController : MonoBehaviour
         }
         isLightning = true;
 
-        float oldMaxSpeed = maxSpeed;
-        float oldAcceleration = acceleration;
-        maxSpeed = newMaxSpeed;
-        acceleration = newAcceleration;
+        float oldMaxSpeed = MaxSpeed;
+        float oldAcceleration = Acceleration;
+        MaxSpeed = newMaxSpeed;
+        Acceleration = newAcceleration;
 
         yield return new WaitForSeconds(duration);
 
-        maxSpeed = oldMaxSpeed;
-        acceleration = oldAcceleration;
+        MaxSpeed = oldMaxSpeed;
+        Acceleration = oldAcceleration;
 
         isLightning = false;
     }
@@ -292,7 +253,7 @@ public class BasketController : MonoBehaviour
         isMultiplier = true;
 
         int oldValue = score_increment_value;
-        TextMeshProUGUI textMesh = increaseScore.GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI textMesh = increaseScoreAnimation.GetComponent<TextMeshProUGUI>();
         string oldText = textMesh.text;
         score_increment_value = score_increment_value * multiplier;
         textMesh.text = "+" + score_increment_value.ToString();
