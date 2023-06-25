@@ -68,6 +68,9 @@ TagManager:
   - name: Rocks
     uniqueID: 2008863539
     locked: 0
+  - name: Background
+    uniqueID: 1012112013
+    locked: 0
   - name: Falling Words
     uniqueID: 1213879003
     locked: 0
