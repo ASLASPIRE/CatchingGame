@@ -2,10 +2,22 @@ using PlayFab.ClientModels;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static MenuScreenManager;
-
 public class Globals : MonoBehaviour
 {
+    public enum Difficulty
+    {
+        Easy,
+        Medium,
+        Hard
+    }
+
+    public enum Vocab
+    {
+        Chemistry,
+        Biology,
+        FoodWeb,
+        PartsOfTheCell
+    }
     public static TextAsset jsonFile;
     public static string vocabSet = "PartsOfTheCell"; //to be deprecated
     public static int level = 1; 
@@ -15,7 +27,7 @@ public class Globals : MonoBehaviour
     public static List<PlayerLeaderboardEntry> leaderboardEntries = new List<PlayerLeaderboardEntry>();
     public static  bool tutorial = false;
     public static Difficulty difficulty = Difficulty.Easy;
-    public static Vocab vocabList = Vocab.PartsOfTheCell;
+    public static Vocab vocabList = Vocab.Chemistry;
 
 
 }

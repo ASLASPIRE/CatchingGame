@@ -5,6 +5,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static Globals;
 
 public class MenuScreenManager : MonoBehaviour
 {
@@ -13,25 +14,11 @@ public class MenuScreenManager : MonoBehaviour
     [SerializeField] private ToggleGroup difficultyToggleGroup;
     [SerializeField] private ToggleGroup vocabToggleGroup;
 
-    public enum Difficulty
-    {
-        Easy,
-        Medium,
-        Hard
-    }
-
-    public enum Vocab
-    {
-        Chemistry,
-        Biology,
-        FoodWeb,
-        PartsOfTheCell
-    }
-
     // Start is called before the first frame update
     void Start()
     {
         loadingPanel.SetActive(false);
+        Time.timeScale = 1.0f;
     }
 
     // Update is called once per frame
