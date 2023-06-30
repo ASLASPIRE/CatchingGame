@@ -30,7 +30,7 @@ public class BasketController : MonoBehaviour
     public int score { get; set; } = 0;
     public int scoreNeeded { get; set; } = 1000;
     public int lives { get; set; } = 5;
-    private int score_increment_value = 100;
+    public int score_increment_value = 100;
 
     // Animations
     [Header("Animations")]
@@ -60,14 +60,28 @@ public class BasketController : MonoBehaviour
         // Correct text of "increasing score" animation
         TextMeshProUGUI textMesh = increaseScoreAnimation.GetComponent<TextMeshProUGUI>();
         textMesh.text = "+" + score_increment_value.ToString();
+
+        switch (Globals.difficulty)
+		{
+			case Globals.Difficulty.Easy:
+                scoreNeeded = 800;
+				break;
+			case Globals.Difficulty.Medium:
+                scoreNeeded = 1000;
+				break;
+			case Globals.Difficulty.Hard:
+                scoreNeeded = 1500;
+				break;
+		}
+
     }
 
-    private void UpdateScoreUIText(int newScore)
+    public void UpdateScoreUIText(int newScore)
     {
         scoreText.text = $"Score: {newScore} / {scoreNeeded}";
     }
 
-    private void UpdateLivesUIText(int newLives)
+    public void UpdateLivesUIText(int newLives)
     {
         livesText.text = $"Lives: {newLives}";
     }

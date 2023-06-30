@@ -17,7 +17,7 @@ public class MainMenu : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {   Globals.level = 1;
+    {   //Globals.currentLevel = 1;
         Debug.Log("Started");
         mainMenuPanel.SetActive(true);
         //tutorialPanel.SetActive(false);

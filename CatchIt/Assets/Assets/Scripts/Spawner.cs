@@ -4,6 +4,7 @@ using System.Linq;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Video;
 
 public class Spawner : MonoBehaviour
@@ -18,24 +19,25 @@ public class Spawner : MonoBehaviour
     public float fallingSpeed = 0.2f;
 
     // JSON file containing words
-    [SerializeField] private TextAsset jsonFile;
-    [SerializeField] private string vocabSet;
+    //[SerializeField] private TextAsset jsonFile;
+    //[SerializeField] private string vocabSet;
 
     // Videoplayer
     [SerializeField] private VideoPlayer videoPlayer;
-    [SerializeField] private GIFController gifController;
+    private RawImage rawImage;
+    //[SerializeField] private GIFController gifController;
 
     // Lists containing words and links to the video playing them
     public List<string> links = new List<string>();
     public List<string> words = new List<string>();
 
-    private List<string> smallWords = new List<string>();
-    public int vocabListSize = 10;
+    private List<string> currentWordsToSpawn = new List<string>();
+    public int currentWordsToSpawnSize = 6;
 
     // Specific correct word/link chosen at period
-    public string correctLink = "";
+    //public string correctLink = "";
     public string correctWord = "";
-    public RuntimeAnimatorController correctController;
+    //public RuntimeAnimatorController correctController;
 
     // Time between correct word changes
     public float changeDelay;
@@ -43,34 +45,39 @@ public class Spawner : MonoBehaviour
     public List<RuntimeAnimatorController> vocabList;
     public VideoPlayerController videoPlayerController;
 
-    private List<string> vidVocabList;
+    private bool isSpawnerActive;
+
+    //private List<string> vidVocabList;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (Globals.jsonFile)
-        {
-            jsonFile = Globals.jsonFile;
-        }
-        if (Globals.vocabSet != null) {
-            vocabSet = Globals.vocabSet;
-        }
+        // if (Globals.jsonFile)
+        // {
+        //     jsonFile = Globals.jsonFile;
+        // }
+        // if (Globals.vocabSet != null) {
+        //     vocabSet = Globals.vocabSet;
+        // }
 
-        if (Globals.tutorial){
-            vocabSet = "Tutorial";
-            fallingSpeed = Globals.fallingSpeed;
-        }
-        if(!Globals.tutorial){
-            fallingSpeed = 0;
-        }
+        // if (Globals.tutorial){
+        //     vocabSet = "Tutorial";
+        //     fallingSpeed = Globals.fallingSpeed;
+        // }
+        // if(!Globals.tutorial){
+        //     fallingSpeed = 0;
+        // }
 
         
-        gifController.UpdateVocabSet(vocabSet);
+        //gifController.UpdateVocabSet(vocabSet);
 
         //vocabList = gifController.currentVocabList;
         ////ReadFromFileJSON();
         //InvokeRepeating("ChangeCorrectWord", 1f, changeDelay);
-        ChangeCorrectWord();
+
+        rawImage = videoPlayer.gameObject.GetComponent<RawImage>();
+        rawImage.color = new Color32(255, 255, 255, 0);
+        
         
         //StartCoroutine(SpawnRandomGameObject());
     }
@@ -83,16 +90,27 @@ public class Spawner : MonoBehaviour
 
     public void StartSpawningWords()
     {
+        isSpawnerActive = true;
+        ChangeCorrectWord();
+        rawImage.color = new Color32(255, 255, 255, 255);
         StartCoroutine(SpawnRandomGameObject());
+    }
+
+    public void StopSpawningWords()
+    {
+        isSpawnerActive = false;
+        StopCoroutine(SpawnRandomGameObject());
     }
 
     public IEnumerator SpawnRandomGameObject()
     {
+        if (!isSpawnerActive) yield break;
+
         yield return new WaitForSeconds(Globals.spawnRate);
-        int randomVocabWordIndex = Random.Range(0, smallWords.Count);
+        int randomVocabWordIndex = Random.Range(0, currentWordsToSpawn.Count);
         if (word.GetComponent<TextMeshPro>() != null)
         {
-            word.GetComponent<TextMeshPro>().text = smallWords[randomVocabWordIndex];
+            word.GetComponent<TextMeshPro>().text = currentWordsToSpawn[randomVocabWordIndex];
             Rigidbody2D wordRigidBody = word.GetComponent<Rigidbody2D>();
             wordRigidBody.gravityScale = fallingSpeed;
             Instantiate(word, new Vector2(Random.Range(xBoundLeft, xBoundRight), yBound), Quaternion.identity);
@@ -145,18 +163,18 @@ public class Spawner : MonoBehaviour
 
     }
 
-    public void ReadFromFileJSON()
-    {
-        //Debug.Log("about to read file");
-        // feed in textasset.text, add json file as text asset to a game object (forces load)
-        Questions questionsjson = JsonUtility.FromJson<Questions>(jsonFile.text);
-        //Debug.Log("file read");
-        foreach (Question q in questionsjson.questions)
-        {
-            links.Add(q.Link);
-            words.Add(q.Word);
-        }
-    }
+    // public void ReadFromFileJSON()
+    // {
+    //     //Debug.Log("about to read file");
+    //     // feed in textasset.text, add json file as text asset to a game object (forces load)
+    //     Questions questionsjson = JsonUtility.FromJson<Questions>(jsonFile.text);
+    //     //Debug.Log("file read");
+    //     foreach (Question q in questionsjson.questions)
+    //     {
+    //         links.Add(q.Link);
+    //         words.Add(q.Word);
+    //     }
+    // }
 
     // public void SetList(){
     //     vocabList = gifController.currentVocabList;
@@ -169,21 +187,37 @@ public class Spawner : MonoBehaviour
 
     public void ChangeCorrectWord()
     {
-        vidVocabList = videoPlayerController.VocabWordToPathDict.Keys.ToList();
-        int randomWordIndex = Random.Range(0, vidVocabList.Count);
-        string randomWord = vidVocabList[randomWordIndex];
+        List<string> levelVocabList = LevelOperator.CurrentLevelVocabList;
+        Debug.Log($"Size of levelvocablist (again 2) = {levelVocabList.Count}");
+        int randomWordIndex = Random.Range(0, levelVocabList.Count);
+        string randomWord = levelVocabList[randomWordIndex];
         correctWord = randomWord;
-        smallWords.Clear();
-        smallWords.Add(correctWord);
-        for (int i = 0; i < vocabListSize; i++)
+        currentWordsToSpawn.Clear();
+    
+        if (levelVocabList.Count >= currentWordsToSpawnSize)
         {
-            int randomVocabWordIndex = Random.Range(0, vidVocabList.Count);
-            smallWords.Add(vidVocabList[randomVocabWordIndex]);
+            currentWordsToSpawn.AddRange(levelVocabList);
         }
+        else
+        {
+            currentWordsToSpawn.Add(correctWord);
+            Debug.Log($"Size of levelvocablist (again 2.5) = {levelVocabList.Count}");
+            for (int i = 0; i < currentWordsToSpawnSize; i++)
+            {
+                int randomVocabWordIndex = Random.Range(0, levelVocabList.Count);
+                currentWordsToSpawn.Add(levelVocabList[randomVocabWordIndex]);
+                Debug.Log($"Size of levelvocablist (looping) = {levelVocabList.Count}");
+            }
+            Debug.Log($"Size of levelvocablist (again 2.75) = {levelVocabList.Count}");
+        }
+        
+        
         Debug.Log("about to play video");
-        videoPlayerController.PlayVideo(correctWord);
+        //videoPlayerController.PlayVideo(correctWord);
+        videoPlayer.url = VideoManager.VocabWordToPathDict[correctWord];
+        videoPlayer.Play();
 
-
+        Debug.Log($"Size of levelvocablist (again 3) = {levelVocabList.Count}");
 
 
         //// // Choose random correct word

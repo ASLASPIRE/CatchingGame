@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -82,5 +84,10 @@ public class MenuScreenManager : MonoBehaviour
     private bool CaseInsensitiveContains(string source, string toCompare)
     {
         return source.IndexOf(toCompare, System.StringComparison.OrdinalIgnoreCase) >= 0;
+    }
+
+    public void OnQuitButtonClick()
+    {
+        Application.Quit();
     }
 }

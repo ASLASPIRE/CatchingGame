@@ -1,53 +1,72 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
-using UnityEngine.UI; 
+using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class LevelOperator : MonoBehaviour
 {
-    private Animator anim;
-    //private string currentState;
-    private RuntimeAnimatorController currentState;
-    public GameObject levelOperator; 
+    [Header("Managers")]
+    [SerializeField] private Spawner spawner;
 
-    // Testing List
-    
-    public Text buttonText; 
-    private int index; 
-    private bool ready = false; 
-    public GameObject spawner; 
-    public Spawner spawnSpeed; 
-    public Text vocabDisplay; 
-    public GameObject gif; 
-    //public int level = 1; 
-    private List<RuntimeAnimatorController> fullList; 
-    private List <RuntimeAnimatorController> levelList;
-    public GIFController gifController;
-    public WebcamDisplay webcam; 
+    [Header("External Components")]
+    [SerializeField] private GameObject learnNewVocabPanel;
+    [SerializeField] private TextMeshProUGUI vocabTextDisplay;
+    [SerializeField] private TextMeshProUGUI levelTextDisplay;
+    private VideoPlayer learningVideoPlayer;
+    private Button button;
 
-
-    // Awake is called before the first frame update and before Start()
-    void Awake()
-    {
-        
-    }
+    [Header("Parameters")]
+    public static List<string> CurrentLevelVocabList;
+    private int vocabListIndex;
+    public static int CurrentLevel = 1;
+    public static int TotalLevels = 4;
 
     // Start is called before the first frame update
     void Start()
     {
-        anim = GetComponent<Animator>();
-        anim.speed = 1.0f;
-        index = 0;
-        //ADD level number 1 in here 
-        levelList = levelListCreator(gifController.currentVocabList);
-        spawnSpeed = spawner.GetComponent<Spawner>();
-        //spawnSpeed.SetList();
+        // Get Components
+        learningVideoPlayer = learnNewVocabPanel.GetComponentInChildren<VideoPlayer>();
+        button = learnNewVocabPanel.GetComponentInChildren<Button>();
 
-        gif.SetActive(false);
-        nextButton();
-        
-        
+        // Process difficulty
+        switch (Globals.difficulty)
+		{
+			case Globals.Difficulty.Easy:
+                Globals.fallingSpeed = 0.2f;
+                Globals.spawnRate = 1.2f;
+                Globals.TotalLevels = 3;
+				break;
+			case Globals.Difficulty.Medium:
+				Globals.fallingSpeed = 0.3f;
+                Globals.spawnRate = 1.0f;
+                Globals.TotalLevels = 4;
+				break;
+			case Globals.Difficulty.Hard:
+				Globals.fallingSpeed = 0.4f;
+                Globals.spawnRate = 0.8f;
+                Globals.TotalLevels = 5;
+				break;
+		}
+
+        // Generate list of vocab words
+        VideoManager.GenerateVocabListFromSelectedVocabSet();
+
+        // Display level
+        levelTextDisplay.text = "Level: " + Globals.CurrentLevel.ToString() + "/" + Globals.TotalLevels.ToString();
+
+        // Pause game and prepare learning screen
+        Time.timeScale = 0.0f;
+        CurrentLevelVocabList = new List<string>();
+        CurrentLevelVocabList = CreateLevelVocabList(VideoManager.VocabWordToPathDict.Keys.ToList(), Globals.CurrentLevel, Globals.TotalLevels);
+        vocabListIndex = 0;
+        Debug.Log($"Size of levelvocablist = {CurrentLevelVocabList.Count}");
+        Debug.Log($"Displaying {CurrentLevelVocabList[vocabListIndex]}");
+        vocabTextDisplay.text = CurrentLevelVocabList[vocabListIndex];
+        learningVideoPlayer.url = VideoManager.VocabWordToPathDict[CurrentLevelVocabList[vocabListIndex]];
+        Debug.Log($"Size of levelvocablist (again) = {CurrentLevelVocabList.Count}");
     }
 
     // Update is called once per frame
@@ -56,112 +75,42 @@ public class LevelOperator : MonoBehaviour
 
     }
 
-
-    public void UpdateLevelSet(string newLevelSet)
+    /// <summary>
+    /// Creates a miniature list of vocab words compared to the full vocab list specific to each level, where the number in each list increases per level
+    /// </summary>
+    /// <param name="fullVocabList">The list containing all the vocab words</param>
+    /// <param name="levelNumber">The current level number</param>
+    /// <param name="totalNumLevels">The total number of levels implemented</param>
+    /// <returns>Returns a new list with the shortened list of vocab words</returns>
+    public List<string> CreateLevelVocabList(List<string> fullVocabList, int levelNumber, int totalNumLevels)
     {
-        // switch (newLevelSet)
-        // {
-        //     case "Level One":
-        //         levelList = levelOneVocab;
-        //         break;
+        Debug.Log($"currentLevelNumber = {levelNumber}");
+        Debug.Log($"totalNumLevels = {totalNumLevels}");
 
-        //     case "Level Two":
-        //         levelList = levelOneVocab;
-        //         break;
-            
-        //     case "Level Three":
-        //         levelList = levelOneVocab;
-        //         break;
-            
-        // }
+        return fullVocabList.GetRange(0, Mathf.FloorToInt(((float) levelNumber / (float) totalNumLevels) * fullVocabList.Count));
     }
 
-    //I want a function that takes the full vocab list and manages the contents based on what level you are on
-    //Level operator takes the full list and grabs the first three words as the current level list
-    //Then it passes it to Spawner to be used 
-
-    public  List<RuntimeAnimatorController> levelListCreator(List<RuntimeAnimatorController> gifControllerList){
-       
-        fullList = gifControllerList;
-        //Add three more words each level
-        int level = Globals.level;
-        if (level == 1){
-            levelList = fullList.GetRange(0, 3);
-
-        }
-
-        if (level ==2){
-            levelList = fullList.GetRange(0, 6);
-        }
-
-        if (level==3){
-            levelList = fullList.GetRange(0, 9);
-        }
-
-        if (level ==4){
-            Debug.Log("Invalid level");
-            return levelList; 
-        }
-        
-        
-      
-        return levelList; 
-
-
-
-
-    }
-
-
-    public void nextButton(){
-
-        if (index ==0 ){
-            webcam.turnOnWebcam();
-        }
-        if (index< levelList.Count){
-        ChangeAnimationState(levelList[index]);
-        
-        vocabDisplay.text = levelList[index].name; 
-        index ++;
-        
-        }
-
-        if (ready){
-            Time.timeScale = 1.0f; 
-            spawnSpeed.fallingSpeed = Globals.fallingSpeed;
-            gif.SetActive(true);
-            webcam.turnOffWebcam();
-            spawnSpeed.StartSpawningWords();
-            levelOperator.SetActive(false);
-        }
-        
-
-        if (index == levelList.Count){
-            buttonText.text = "Let's play!";
-            ready = true;
-                    
-            
-
-        }
-
-        
-        
-    }
-
-
-
-
-    public void ChangeAnimationState(RuntimeAnimatorController newState)
+    public void OnNextButtonClick()
     {
-        Debug.Log("made it here 1");
-        Debug.Log($"newState = {newState.name}");
-        if (currentState == newState) return;
-        //string toPlay = vocabSetName + "." + newState;
-        //Debug.Log($"newStateName = {toPlay}");
-        //anim.Play(toPlay);
-        //Debug.Log($"name of controller = {levelList[newState].name}");
-        //anim.runtimeAnimatorController = levelList[newState] as RuntimeAnimatorController;
-        anim.runtimeAnimatorController = newState as RuntimeAnimatorController;
-        currentState = newState;
+        Debug.Log($"current index upon button click = {vocabListIndex}");
+        Debug.Log($"currentLevelVocabList Count = {CurrentLevelVocabList.Count}");
+        if (vocabListIndex < CurrentLevelVocabList.Count - 1)
+        {
+            vocabListIndex++;
+            vocabTextDisplay.text = CurrentLevelVocabList[vocabListIndex];
+            learningVideoPlayer.url = VideoManager.VocabWordToPathDict[CurrentLevelVocabList[vocabListIndex]];
+            
+            if (vocabListIndex == CurrentLevelVocabList.Count - 1)
+            {
+                TextMeshProUGUI buttonText = button.gameObject.GetComponentInChildren<TextMeshProUGUI>();
+                buttonText.text = "Play";
+            }
+        }
+        else
+        {
+            learnNewVocabPanel.SetActive(false);
+            Time.timeScale = 1.0f;
+            spawner.StartSpawningWords();
+        }
     }
 }

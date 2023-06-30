@@ -16,7 +16,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject levelManager;
 
     public GameObject nextLevelPanel;
-    public GameObject spawner;
+    public Spawner spawner;
     public bool isNextLevelPanelCalled; 
 
     public bool isGameOver = false;
@@ -31,11 +31,10 @@ public class UIManager : MonoBehaviour
         //Disables panels if active
         isNextLevelPanelCalled = false;
         gameOverPanel.SetActive(false);
-        restartText.gameObject.SetActive(false);
         leaderboardPanel.SetActive(false);
         nextLevelPanel.SetActive(false);
         Time.timeScale = 1.0f;
-        levelManager.SetActive(false);
+        //levelManager.SetActive(false);
         winPanel.SetActive(false);
     }
 
@@ -60,7 +59,7 @@ public class UIManager : MonoBehaviour
         //change to basket.score
         if (basket.score >= basket.scoreNeeded && !isNextLevelPanelCalled){
             
-            if (Globals.level == 3){
+            if (Globals.CurrentLevel == Globals.TotalLevels){
                 StartWinSequence();
             }
             StartNextLevelSequence();
@@ -104,26 +103,47 @@ public class UIManager : MonoBehaviour
 
     public void StartNextLevelSequence()
     {   
-        Debug.Log("level is");
-        Debug.Log(Globals.level);
+        //Debug.Log("level is");
+        //Debug.Log(Globals.currentLevel);
+
         isNextLevelPanelCalled = true;
-        spawner.SetActive(false);
+        GameObject[] currentWords = GameObject.FindGameObjectsWithTag("word");
+        Debug.Log($"number of spawned words to destroy = {currentWords.Length}");
+        spawner.StopSpawningWords();
+        foreach (GameObject word in currentWords)
+        {
+            Destroy(word);
+        }
+
+        spawner.gameObject.SetActive(false);
         //Time.timeScale = 0;
         //playfabManager.SendLeaderboard(basket.score);
         //playfabManager.SaveScore(basket.score);
-
-        
-        if (Globals.level < 3){
-            Globals.level++;
+        if (Globals.CurrentLevel < Globals.TotalLevels)
+        {
+            Globals.CurrentLevel++;
             nextLevelPanel.SetActive(true);
         }
-
-        if (Globals.level > 3){
-            //Debug.Log("Level issue?");
-            //Debug.Log("Level is three!");
+        else
+        {
+            Debug.Log("Congrats u won :o");
+            Debug.Log($"CurrentLevel = {Globals.CurrentLevel}");
+            Debug.Log($"TotalLevels = {Globals.TotalLevels}");
             nextLevelPanel.SetActive(false);
             winPanel.SetActive(true);
         }
+        
+        // if (Globals.currentLevel < 3){
+        //     Globals.currentLevel++;
+        //     nextLevelPanel.SetActive(true);
+        // }
+
+        // if (Globals.currentLevel > 3){
+        //     //Debug.Log("Level issue?");
+        //     //Debug.Log("Level is three!");
+        //     nextLevelPanel.SetActive(false);
+        //     winPanel.SetActive(true);
+        // }
 
 
         
@@ -138,14 +158,19 @@ public class UIManager : MonoBehaviour
         winPanel.SetActive(true);
     }
 
-    public void winButton()
+    public void OnMainMenuClick()
     {
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene(0);
     }
 
-    public void nextClick()
+    public void OnNextLevelClick()
     {
-        Time.timeScale = 1.0f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void OnRestartGameClick()
+    {
+        Globals.CurrentLevel = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
