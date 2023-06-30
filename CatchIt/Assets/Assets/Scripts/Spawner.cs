@@ -114,7 +114,8 @@ public class Spawner : MonoBehaviour
         yield return new WaitForSeconds(Random.Range(1, 2));
 
         int randomPowerUp = Random.Range(0, powerUps.Length);
-        Instantiate(powerUps[randomPowerUp], new Vector2(Random.Range(xBoundLeft, xBoundRight), yBound), Quaternion.identity);
+        GameObject tmp = Instantiate(powerUps[randomPowerUp], new Vector2(Random.Range(xBoundLeft, xBoundRight), yBound), Quaternion.identity);
+        tmp.transform.SetParent(transform, false);
 
     }
 

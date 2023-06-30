@@ -5063,7 +5063,7 @@ MonoBehaviour:
   - {fileID: 4566682154314672602, guid: 54e3302499936344283b624318b8d02e, type: 3}
   - {fileID: 2366869074817556512, guid: 88be60351032d9f40b95950f8a6aadd4, type: 3}
   - {fileID: 42853297999921379, guid: 6c2852aaae9ff6547ba40675ecf11981, type: 3}
-  xBoundLeft: -4
+  xBoundLeft: -3.5
   xBoundRight: 1.6
   yBound: 7
   fallingSpeed: 0.15
