@@ -17,8 +17,11 @@ public class DebuggingTools : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            basketController.score += basketController.score_increment_value;
-            basketController.UpdateScoreUIText(basketController.score);
+            basketController.AddScore();
+        }
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            basketController.LoseLife();
         }
     }
 }

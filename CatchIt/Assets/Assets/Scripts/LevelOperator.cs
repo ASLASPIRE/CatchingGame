@@ -35,19 +35,13 @@ public class LevelOperator : MonoBehaviour
         switch (Globals.difficulty)
 		{
 			case Globals.Difficulty.Easy:
-                Globals.fallingSpeed = 0.2f;
-                Globals.spawnRate = 1.2f;
-                Globals.TotalLevels = 3;
+                TotalLevels = 3;
 				break;
 			case Globals.Difficulty.Medium:
-				Globals.fallingSpeed = 0.3f;
-                Globals.spawnRate = 1.0f;
-                Globals.TotalLevels = 4;
+                TotalLevels = 4;
 				break;
 			case Globals.Difficulty.Hard:
-				Globals.fallingSpeed = 0.4f;
-                Globals.spawnRate = 0.8f;
-                Globals.TotalLevels = 5;
+                TotalLevels = 5;
 				break;
 		}
 
@@ -55,18 +49,15 @@ public class LevelOperator : MonoBehaviour
         VideoManager.GenerateVocabListFromSelectedVocabSet();
 
         // Display level
-        levelTextDisplay.text = "Level: " + Globals.CurrentLevel.ToString() + "/" + Globals.TotalLevels.ToString();
+        levelTextDisplay.text = "Level: " + LevelOperator.CurrentLevel.ToString() + "/" + LevelOperator.TotalLevels.ToString();
 
         // Pause game and prepare learning screen
         Time.timeScale = 0.0f;
         CurrentLevelVocabList = new List<string>();
-        CurrentLevelVocabList = CreateLevelVocabList(VideoManager.VocabWordToPathDict.Keys.ToList(), Globals.CurrentLevel, Globals.TotalLevels);
+        CurrentLevelVocabList = CreateLevelVocabList(VideoManager.VocabWordToPathDict.Keys.ToList(), LevelOperator.CurrentLevel, LevelOperator.TotalLevels);
         vocabListIndex = 0;
-        Debug.Log($"Size of levelvocablist = {CurrentLevelVocabList.Count}");
-        Debug.Log($"Displaying {CurrentLevelVocabList[vocabListIndex]}");
         vocabTextDisplay.text = CurrentLevelVocabList[vocabListIndex];
         learningVideoPlayer.url = VideoManager.VocabWordToPathDict[CurrentLevelVocabList[vocabListIndex]];
-        Debug.Log($"Size of levelvocablist (again) = {CurrentLevelVocabList.Count}");
     }
 
     // Update is called once per frame
@@ -84,16 +75,11 @@ public class LevelOperator : MonoBehaviour
     /// <returns>Returns a new list with the shortened list of vocab words</returns>
     public List<string> CreateLevelVocabList(List<string> fullVocabList, int levelNumber, int totalNumLevels)
     {
-        Debug.Log($"currentLevelNumber = {levelNumber}");
-        Debug.Log($"totalNumLevels = {totalNumLevels}");
-
         return fullVocabList.GetRange(0, Mathf.FloorToInt(((float) levelNumber / (float) totalNumLevels) * fullVocabList.Count));
     }
 
     public void OnNextButtonClick()
     {
-        Debug.Log($"current index upon button click = {vocabListIndex}");
-        Debug.Log($"currentLevelVocabList Count = {CurrentLevelVocabList.Count}");
         if (vocabListIndex < CurrentLevelVocabList.Count - 1)
         {
             vocabListIndex++;

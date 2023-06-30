@@ -18,16 +18,13 @@ public class Globals : MonoBehaviour
         FoodWeb,
         PartsOfTheCell
     }
-    public static TextAsset jsonFile;
+    public static TextAsset jsonFile; //might use later for webgl stuff
     public static string vocabSet = "PartsOfTheCell"; //to be deprecated
-    public static float fallingSpeed = 0.2f;
-    public static float spawnRate = 0.9f;
-    public static int incrementValue = 100;
-    public static List<PlayerLeaderboardEntry> leaderboardEntries = new List<PlayerLeaderboardEntry>();
-    public static  bool tutorial = false;
-    public static Difficulty difficulty = Difficulty.Easy;
+    public static float fallingSpeed = 0.2f; //to be deprecated
+    public static float spawnRate = 0.9f; //to be deprecated
+    public static int incrementValue = 100; //to be deprecated
+    public static List<PlayerLeaderboardEntry> leaderboardEntries = new List<PlayerLeaderboardEntry>(); //to use later
+    public static bool tutorial = false;
+    public static Difficulty difficulty = Difficulty.Medium;
     public static Vocab vocabList = Vocab.Chemistry;
-    public static int CurrentLevel = 1;
-    public static int TotalLevels = 4;
-
 }

@@ -84,7 +84,7 @@ public class OldLevelOperator : MonoBehaviour
        
         fullList = gifControllerList;
         //Add three more words each level
-        int level = Globals.CurrentLevel;
+        int level = LevelOperator.CurrentLevel;
         if (level == 1){
             levelList = fullList.GetRange(0, 3);
 

@@ -23,6 +23,7 @@ public class LearningManager : MonoBehaviour
     public GameObject powerups;
     public GameObject powerupTransition;
     public GameObject tutorialText;
+    public GameMechanics gameMechanics;
     
     
     // Start is called before the first frame update
@@ -46,11 +47,11 @@ public class LearningManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (basket.score > 0){
+        if (gameMechanics.Score > 0){
             stepThreeManager(); 
         }
 
-        if(basket.lives < 5){
+        if(GameMechanics.Lives < 5){
             regressionStep();
         }
 
@@ -112,8 +113,8 @@ void FixedUpdate()
 public void stepTwoManager(){
     if (stepOne && !stepTwo){
     Time.timeScale = 1; 
-    basket.lives = 5; 
-    basket.score = 0;
+    GameMechanics.Lives = 5; 
+    gameMechanics.Score = 0;
     swipeIcon.SetActive(false);
     tutorialtext.text = "Words are falling from the sky! Catch the word that is being signed.";
     spawner.SetActive(true);

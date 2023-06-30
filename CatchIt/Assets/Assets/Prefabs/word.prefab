@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7172145997100528518}
   - component: {fileID: 4150801585078664284}
   - component: {fileID: 4150801585078664283}
-  - component: {fileID: 4150801585078664278}
   m_Layer: 0
   m_Name: word
   m_TagString: word
@@ -104,7 +103,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Evaporation
+  m_text: Activation Energy
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
@@ -191,7 +190,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.15
+  m_GravityScale: 0.3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -213,21 +212,6 @@ CircleCollider2D:
   m_Offset: {x: 0.0029570013, y: -0.016363092}
   serializedVersion: 2
   m_Radius: 0.40843028
---- !u!114 &4150801585078664278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6214006477172679971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
 --- !u!1 &8427780118179399909
 GameObject:
   m_ObjectHideFlags: 0

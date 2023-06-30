@@ -13,6 +13,7 @@ public class BasketController : MonoBehaviour
     [SerializeField] private PlayfabManager playfabManager;
     [SerializeField] private UIManager uiManager;
     [SerializeField] private Spawner spawner;
+    [SerializeField] private GameMechanics gameMechanics;
 
     private Rigidbody2D myBody;
 
@@ -24,21 +25,7 @@ public class BasketController : MonoBehaviour
 
     // UI - Must externally set text
     [Header("UI Elements")]
-    [SerializeField] private TextMeshProUGUI scoreText;
-    [SerializeField] private TextMeshProUGUI livesText;
     [SerializeField] private Joystick joystick;
-    public int score { get; set; } = 0;
-    public int scoreNeeded { get; set; } = 1000;
-    public int lives { get; set; } = 5;
-    public int score_increment_value = 100;
-
-    // Animations
-    [Header("Animations")]
-    public Animator loseLifeAnimation; // -1 animation
-    public Animator increaseScoreAnimation; // +100 animation
-
-    // Check if word entered trigger
-    private bool enter = false;
 
     // Booleans for powerups
     private bool isLightning = false;
@@ -50,43 +37,25 @@ public class BasketController : MonoBehaviour
     private void Start()
     {
         myBody = GetComponent<Rigidbody2D>();
-
-        // Set UI text
-        UpdateScoreUIText(score);
-        UpdateLivesUIText(lives);
-
-        score_increment_value = Globals.incrementValue;
-
-        // Correct text of "increasing score" animation
-        TextMeshProUGUI textMesh = increaseScoreAnimation.GetComponent<TextMeshProUGUI>();
-        textMesh.text = "+" + score_increment_value.ToString();
-
-        switch (Globals.difficulty)
-		{
-			case Globals.Difficulty.Easy:
-                scoreNeeded = 800;
-				break;
-			case Globals.Difficulty.Medium:
-                scoreNeeded = 1000;
-				break;
-			case Globals.Difficulty.Hard:
-                scoreNeeded = 1500;
-				break;
-		}
-
     }
 
-    public void UpdateScoreUIText(int newScore)
+    public int AddScore()
     {
-        scoreText.text = $"Score: {newScore} / {scoreNeeded}";
+        int newScore = gameMechanics.AddScore();
+        uiManager.UpdateScoreUIText(newScore, GameMechanics.LevelScoreNeeded);
+        uiManager.increaseScoreAnimation.SetTrigger("playAnimation");
+        return newScore;
     }
 
-    public void UpdateLivesUIText(int newLives)
+    public int LoseLife()
     {
-        livesText.text = $"Lives: {newLives}";
+        int newLives = gameMechanics.LoseLife();
+        uiManager.UpdateLivesUIText(newLives);
+        uiManager.loseLifeAnimation.SetTrigger("playAnimation");
+        return newLives;
     }
 
-    // FixedUpdate is called 32 times every second (or whatever predetermined framerate) and is useful for physics stuff
+    // FixedUpdate is called 50 times every second and is useful for physics stuff
     private void FixedUpdate()
     {
         // Handle player movement left and right
@@ -102,39 +71,35 @@ public class BasketController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (enter)
+        GameObject colliderGameObject = collision.gameObject;
+        string tag = collision.tag;
+        if (tag.Equals("word_greyed"))
         {
             return;
         }
-        enter = true;
 
-        GameObject colliderGameObject = collision.gameObject;
-        string tag = collision.tag;
         Destroy(collision.gameObject);
 
-        Debug.Log($"collision tag: {tag}");
-
-        if (tag == "lightning_bolt")
+        if (tag.Equals("lightning_bolt"))
         {
             StartCoroutine(LightningBoltPowerup(15, 100, 10));
         }
-        else if (tag == "stopwatch")
+        else if (tag.Equals("stopwatch"))
         {
             StartCoroutine(StopwatchPowerup(0.05f, 10));
         }
-        else if (tag == "burger")
+        else if (tag.Equals("burger"))
         {
             StartCoroutine(BurgerPowerup(1.5f, 10));
         }
-        else if (tag == "multiplication")
+        else if (tag.Equals("multiplication"))
         {
             StartCoroutine(MultiplicationPowerup(2, 10));
         }
 
-        if (tag == "word")
+        if (tag.Equals("word"))
         {
             TextMeshPro textMeshPro = colliderGameObject.GetComponent<TextMeshPro>();
-            Debug.Log($"collision word: {textMeshPro.text}");
             if (textMeshPro == null)
             {
                 throw new System.Exception("Falling word does not contain a TextMeshPro element.");
@@ -147,12 +112,10 @@ public class BasketController : MonoBehaviour
 
             string textWord = textMeshPro.text;
 
-            if (string.Equals(textWord, spawner.correctWord))
+            if (string.Equals(textWord, spawner.CorrectWord))
             {
                 // Player caught the correct word, increase score
-                score += score_increment_value;
-                UpdateScoreUIText(score);
-                increaseScoreAnimation.SetTrigger("playAnimation");
+                AddScore();
 
                 // Choose the next word to catch
                 spawner.ChangeCorrectWord();
@@ -163,30 +126,17 @@ public class BasketController : MonoBehaviour
                 {
                     TextMeshPro wordTextMeshPro = word.GetComponent<TextMeshPro>();
                     wordTextMeshPro.color = Color.gray;
-                    CircleCollider2D circleCollider = word.GetComponent<CircleCollider2D>();
-                    circleCollider.enabled = false;
+                    word.tag = "word_greyed";
+                    //CircleCollider2D circleCollider = word.GetComponent<CircleCollider2D>();
+                    //circleCollider.enabled = false;
                 }
             }
             else
             {
                 // Player caught the wrong word, decrease lives
-                lives--;
-                UpdateLivesUIText(lives);
-                loseLifeAnimation.SetTrigger("playAnimation");
-
-                // If lives are at 0, game over
-                if (lives == 0)
-                {
-                    uiManager.isGameOver = true;
-                    StartCoroutine(uiManager.StartGameOverSequence());
-                }
+                LoseLife();
             }
         }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        enter = false;
     }
 
     IEnumerator LightningBoltPowerup(float newMaxSpeed, float newAcceleration, float duration)
@@ -266,15 +216,15 @@ public class BasketController : MonoBehaviour
         }
         isMultiplier = true;
 
-        int oldValue = score_increment_value;
-        TextMeshProUGUI textMesh = increaseScoreAnimation.GetComponent<TextMeshProUGUI>();
+        int oldValue = GameMechanics.ScoreIncrementValue;
+        TextMeshProUGUI textMesh = uiManager.increaseScoreAnimation.GetComponent<TextMeshProUGUI>();
         string oldText = textMesh.text;
-        score_increment_value = score_increment_value * multiplier;
-        textMesh.text = "+" + score_increment_value.ToString();
+        GameMechanics.ScoreIncrementValue = GameMechanics.ScoreIncrementValue * multiplier;
+        textMesh.text = "+" + GameMechanics.ScoreIncrementValue.ToString();
 
         yield return new WaitForSeconds(duration);
 
-        score_increment_value = oldValue;
+        GameMechanics.ScoreIncrementValue = oldValue;
         textMesh.text = oldText;
 
         isMultiplier = false;

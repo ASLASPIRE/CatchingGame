@@ -15,11 +15,13 @@ public class MenuScreenManager : MonoBehaviour
     [SerializeField] private Image loadingBarMask;
     [SerializeField] private ToggleGroup difficultyToggleGroup;
     [SerializeField] private ToggleGroup vocabToggleGroup;
+    [SerializeField] private GameObject tutorialPanel;
 
     // Start is called before the first frame update
     void Start()
     {
         loadingPanel.SetActive(false);
+        tutorialPanel.SetActive(false);
         Time.timeScale = 1.0f;
     }
 
@@ -89,5 +91,15 @@ public class MenuScreenManager : MonoBehaviour
     public void OnQuitButtonClick()
     {
         Application.Quit();
+    }
+
+    public void OnTutorialButtonClick()
+    {
+        tutorialPanel.SetActive(true);
+    }
+
+    public void OnBackButtonClick()
+    {
+        tutorialPanel.SetActive(false);
     }
 }

@@ -7,155 +7,100 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("UI Panel Elements")]
     [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private GameObject winPanel;
     [SerializeField] private TextMeshProUGUI gameOverText;
-    [SerializeField] private TextMeshProUGUI restartText;
-    [SerializeField] private GameObject leaderboardPanel;
-    [SerializeField] private TextMeshProUGUI[] leaderboardEntries;
-    [SerializeField] private GameObject levelManager;
+    [SerializeField] private GameObject winPanel;
+    [SerializeField] private GameObject nextLevelPanel;
 
-    public GameObject nextLevelPanel;
-    public Spawner spawner;
-    public bool isNextLevelPanelCalled; 
+    [Header("Gameplay UI Elements")]
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI livesText;
+
+    [Header("Animations")]
+    public Animator loseLifeAnimation; // -1 animation
+    public Animator increaseScoreAnimation; // +100 animation
+
+    [Header("Managers")]
+    [SerializeField] private GameObject levelManager;
+    [SerializeField] private Spawner spawner;
+    [SerializeField] private GameMechanics gameMechanics;
+    //private bool isNextLevelPanelCalled; 
 
     public bool isGameOver = false;
 
     public BasketController basket;
     public PlayfabManager playfabManager;
-    public GameObject makeWebcamWork;
+    //public GameObject makeWebcamWork;
 
     // Start is called before the first frame update
     private void Start()
-    {   //Time.timeScale = 0;
-        //Disables panels if active
-        isNextLevelPanelCalled = false;
+    {   
         gameOverPanel.SetActive(false);
-        leaderboardPanel.SetActive(false);
         nextLevelPanel.SetActive(false);
-        Time.timeScale = 1.0f;
-        //levelManager.SetActive(false);
         winPanel.SetActive(false);
-    }
 
+        Time.timeScale = 1.0f;
 
-    public void startUp(){
-        levelManager.SetActive(true);
-        makeWebcamWork.SetActive(false);
+        // Correct text of "increasing score" animation
+        TextMeshProUGUI textMesh = increaseScoreAnimation.GetComponent<TextMeshProUGUI>();
+        textMesh.text = "+" + GameMechanics.ScoreIncrementValue.ToString();
     }
-    
 
     // Update is called once per frame
     void Update()
-    {
-        //Trigger game over manually and check with bool so it isn't called multiple times
-        if (Input.GetKeyDown(KeyCode.G) && !isGameOver)
-        {
-            isGameOver = true;
-
-            StartCoroutine(StartGameOverSequence());
-        }
-
-        //change to basket.score
-        if (basket.score >= basket.scoreNeeded && !isNextLevelPanelCalled){
-            
-            if (Globals.CurrentLevel == Globals.TotalLevels){
-                StartWinSequence();
-            }
-            StartNextLevelSequence();
-        }
-
-
-       
-        //If game is over
-        if (isGameOver)
-        {
-            //If R is hit, restart the current scene
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }
-
-            //If Q is hit, quit the game
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                print("Application Quit");
-                Application.Quit();
-            }
-        }
-
-
+    {       
+        
     }
 
-    // Controls game over canvas and there's a brief delay between main Game Over text and option to restart/quit text
-    public IEnumerator StartGameOverSequence()
+    public void UpdateScoreUIText(int newScore, int scoreNeeded)
     {
-        Time.timeScale = 0;
-        playfabManager.SendLeaderboard(basket.score);
-        playfabManager.SaveScore(basket.score);
+        scoreText.text = $"Score: {newScore} / {scoreNeeded}";
+    }
+
+    public void UpdateLivesUIText(int newLives)
+    {
+        livesText.text = $"Lives: {newLives}";
+    }
+
+    // Controls game over panel
+    public void StartGameOverSequence()
+    {
+        StartCoroutine(GameOverSequence());
+    }
+
+    private IEnumerator GameOverSequence()
+    {
+        playfabManager.SendLeaderboard(gameMechanics.Score);
+        playfabManager.SaveScore(gameMechanics.Score);
 
         gameOverPanel.SetActive(true);
 
-        yield return new WaitForSecondsRealtime(4.0f);
-
-        restartText.gameObject.SetActive(true);
+        yield return new WaitForSecondsRealtime(0.05f); // you can get rid of this if u so desire
     }
 
-    public void StartNextLevelSequence()
+    public void StartEndOfLevelSequence()
     {   
-        //Debug.Log("level is");
-        //Debug.Log(Globals.currentLevel);
+        //isNextLevelPanelCalled = true;
 
-        isNextLevelPanelCalled = true;
+        // Destroy current words
         GameObject[] currentWords = GameObject.FindGameObjectsWithTag("word");
-        Debug.Log($"number of spawned words to destroy = {currentWords.Length}");
         spawner.StopSpawningWords();
         foreach (GameObject word in currentWords)
         {
             Destroy(word);
         }
-
         spawner.gameObject.SetActive(false);
-        //Time.timeScale = 0;
-        //playfabManager.SendLeaderboard(basket.score);
-        //playfabManager.SaveScore(basket.score);
-        if (Globals.CurrentLevel < Globals.TotalLevels)
+
+        if (LevelOperator.CurrentLevel < LevelOperator.TotalLevels)
         {
-            Globals.CurrentLevel++;
+            LevelOperator.CurrentLevel++;
             nextLevelPanel.SetActive(true);
         }
         else
         {
-            Debug.Log("Congrats u won :o");
-            Debug.Log($"CurrentLevel = {Globals.CurrentLevel}");
-            Debug.Log($"TotalLevels = {Globals.TotalLevels}");
-            nextLevelPanel.SetActive(false);
             winPanel.SetActive(true);
         }
-        
-        // if (Globals.currentLevel < 3){
-        //     Globals.currentLevel++;
-        //     nextLevelPanel.SetActive(true);
-        // }
-
-        // if (Globals.currentLevel > 3){
-        //     //Debug.Log("Level issue?");
-        //     //Debug.Log("Level is three!");
-        //     nextLevelPanel.SetActive(false);
-        //     winPanel.SetActive(true);
-        // }
-
-
-        
-
-
-        //restartText.gameObject.SetActive(true);
-    }
-
-    public void StartWinSequence()
-    {
-        nextLevelPanel.SetActive(false);
-        winPanel.SetActive(true);
     }
 
     public void OnMainMenuClick()
@@ -170,7 +115,7 @@ public class UIManager : MonoBehaviour
 
     public void OnRestartGameClick()
     {
-        Globals.CurrentLevel = 1;
+        LevelOperator.CurrentLevel = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
@@ -178,8 +123,8 @@ public class UIManager : MonoBehaviour
     {
         playfabManager.GetLeaderboard();
         gameOverText.gameObject.SetActive(false);
-        leaderboardPanel.SetActive(true);
-        Debug.Log("made it here");
+        //leaderboardPanel.SetActive(true);
+        //Debug.Log("made it here");
 
         //for (int i = 0; i < Globals.leaderboardEntries.Count; i++)
         //{
