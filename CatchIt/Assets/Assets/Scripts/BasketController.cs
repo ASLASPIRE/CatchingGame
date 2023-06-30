@@ -14,6 +14,7 @@ public class BasketController : MonoBehaviour
     [SerializeField] private UIManager uiManager;
     [SerializeField] private Spawner spawner;
     [SerializeField] private GameMechanics gameMechanics;
+    [SerializeField] private PowerupTimer powerupTimer;
 
     private Rigidbody2D myBody;
 
@@ -127,6 +128,8 @@ public class BasketController : MonoBehaviour
                     TextMeshPro wordTextMeshPro = word.GetComponent<TextMeshPro>();
                     wordTextMeshPro.color = Color.gray;
                     word.tag = "word_greyed";
+                    SpriteRenderer sprite = word.GetComponentInChildren<SpriteRenderer>();
+                    sprite.color = new Color32(255, 255, 255, 36);
                     //CircleCollider2D circleCollider = word.GetComponent<CircleCollider2D>();
                     //circleCollider.enabled = false;
                 }
@@ -152,6 +155,7 @@ public class BasketController : MonoBehaviour
         MaxSpeed = newMaxSpeed;
         Acceleration = newAcceleration;
 
+        powerupTimer.RestartTimer(duration);
         yield return new WaitForSeconds(duration);
 
         MaxSpeed = oldMaxSpeed;
@@ -177,6 +181,7 @@ public class BasketController : MonoBehaviour
             rigidBody.gravityScale = newFallingSpeed;
         }
 
+        powerupTimer.RestartTimer(duration);
         yield return new WaitForSeconds(duration);
 
         spawner.fallingSpeed = oldFallingSpeed;
@@ -201,6 +206,7 @@ public class BasketController : MonoBehaviour
         Vector3 oldTransform = transform.localScale;
         transform.localScale = transform.localScale * scaleFactor;
 
+        powerupTimer.RestartTimer(duration);
         yield return new WaitForSeconds(duration);
 
         transform.localScale = oldTransform;
@@ -222,6 +228,7 @@ public class BasketController : MonoBehaviour
         GameMechanics.ScoreIncrementValue = GameMechanics.ScoreIncrementValue * multiplier;
         textMesh.text = "+" + GameMechanics.ScoreIncrementValue.ToString();
 
+        powerupTimer.RestartTimer(duration);
         yield return new WaitForSeconds(duration);
 
         GameMechanics.ScoreIncrementValue = oldValue;
